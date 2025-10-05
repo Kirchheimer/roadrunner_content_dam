@@ -45,58 +45,7 @@
             color: #555;
         }
         
-        .tags {
-            display: flex;
-            gap: 8px;
-            flex-wrap: wrap;
-            margin: 20px 0;
-        }
-        
-        .tag {
-            background: #e0e7ff;
-            color: #4338ca;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 0.85rem;
-            font-weight: 500;
-        }
-        
-        .meta-info {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 16px;
-            margin: 20px 0;
-            padding: 16px;
-            background: #f1f5f9;
-            border-radius: 8px;
-        }
-        
-        .meta-item {
-            font-size: 0.9rem;
-        }
-        
-        .meta-label {
-            font-weight: 600;
-            color: #374151;
-        }
-        
-        .meta-value {
-            color: #6b7280;
-        }
-        
-        .maintainers {
-            margin: 20px 0;
-        }
-        
-        .maintainer {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            margin: 12px 0;
-            padding: 12px;
-            background: #f9fafb;
-            border-radius: 6px;
-        }
+
         
         .loading {
             text-align: center;
@@ -122,10 +71,6 @@
             
             .section-card {
                 padding: 16px;
-            }
-            
-            .meta-info {
-                grid-template-columns: 1fr;
             }
         }
     </style>
@@ -164,29 +109,7 @@
             
             let html = '';
             
-            // Project metadata
-            html += `
-                <div class="meta-info">
-                    <div class="meta-item">
-                        <div class="meta-label">Version</div>
-                        <div class="meta-value">${project.version || 'N/A'}</div>
-                    </div>
-                    <div class="meta-item">
-                        <div class="meta-label">Status</div>
-                        <div class="meta-value">${project.status || 'Unknown'}</div>
-                    </div>
-                    <div class="meta-item">
-                        <div class="meta-label">License</div>
-                        <div class="meta-value">${project.license || 'N/A'}</div>
-                    </div>
-                    <div class="meta-item">
-                        <div class="meta-label">Last Updated</div>
-                        <div class="meta-value">${project.updated || 'N/A'}</div>
-                    </div>
-                </div>
-            `;
-            
-            // Content sections
+            // Only render the main content sections - nothing else
             if (project.sections && project.sections.length > 0) {
                 project.sections.forEach(section => {
                     html += `
@@ -196,55 +119,8 @@
                         </div>
                     `;
                 });
-            }
-            
-            // Tags
-            if (project.tags && project.tags.length > 0) {
-                html += `
-                    <div class="section-card">
-                        <h3>Tags</h3>
-                        <div class="tags">
-                            ${project.tags.map(tag => `<span class="tag">${escapeHtml(tag)}</span>`).join('')}
-                        </div>
-                    </div>
-                `;
-            }
-            
-            // Maintainers
-            if (project.maintainers && project.maintainers.length > 0) {
-                html += `
-                    <div class="section-card">
-                        <h3>Maintainers</h3>
-                        <div class="maintainers">
-                            ${project.maintainers.map(maintainer => `
-                                <div class="maintainer">
-                                    <div>
-                                        <strong>${escapeHtml(maintainer.name)}</strong>
-                                        ${maintainer.email ? `<br><small>${escapeHtml(maintainer.email)}</small>` : ''}
-                                        ${maintainer.github ? `<br><small>@${escapeHtml(maintainer.github)}</small>` : ''}
-                                    </div>
-                                </div>
-                            `).join('')}
-                        </div>
-                    </div>
-                `;
-            }
-            
-            // Stats (if available)
-            if (project.stats) {
-                html += `
-                    <div class="section-card">
-                        <h3>Key Statistics</h3>
-                        <div class="meta-info">
-                            ${Object.entries(project.stats).map(([key, value]) => `
-                                <div class="meta-item">
-                                    <div class="meta-label">${escapeHtml(key.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase()))}</div>
-                                    <div class="meta-value">${escapeHtml(value)}</div>
-                                </div>
-                            `).join('')}
-                        </div>
-                    </div>
-                `;
+            } else {
+                html = '<div class="error">No content sections available.</div>';
             }
             
             contentDiv.innerHTML = html;
