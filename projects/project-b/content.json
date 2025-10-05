@@ -1,0 +1,67 @@
+{
+  "title": "Project B - React UI Component Library",
+  "description": "A comprehensive collection of accessible, customizable React components built with TypeScript and modern design principles. Perfect for building scalable web applications.",
+  "version": "2.1.5",
+  "status": "stable",
+  "repository": "https://github.com/example/project-b",
+  "documentation": "https://project-b-docs.example.com",
+  "demo": "https://project-b-storybook.example.com",
+  "sections": [
+    {
+      "heading": "Overview",
+      "body": "Project B is a modern React component library designed to accelerate development of beautiful, accessible web applications. With over 50 components and a flexible theming system, it provides everything you need to build consistent user interfaces.\n\nBuilt with accessibility in mind, every component follows WCAG 2.1 AA guidelines and includes proper ARIA attributes, keyboard navigation, and screen reader support."
+    },
+    {
+      "heading": "Key Features",
+      "body": "• 50+ production-ready React components\n• Full TypeScript support with comprehensive type definitions\n• Accessibility-first design (WCAG 2.1 AA compliant)\n• Customizable theming system with CSS-in-JS\n• Dark mode support out of the box\n• Tree-shaking for optimal bundle sizes\n• Comprehensive Storybook documentation\n• Jest and React Testing Library test suite\n• SSR (Server-Side Rendering) compatible\n• Mobile-responsive design patterns"
+    },
+    {
+      "heading": "Component Categories",
+      "body": "**Layout Components:**\n• Grid, Flex, Container, Stack, Divider\n\n**Form Components:**\n• Input, Select, Checkbox, Radio, Switch, Textarea, DatePicker\n\n**Navigation:**\n• Navbar, Sidebar, Breadcrumb, Pagination, Tabs\n\n**Feedback:**\n• Alert, Toast, Modal, Tooltip, Progress, Spinner\n\n**Data Display:**\n• Table, Card, Badge, Avatar, List, Accordion\n\n**Overlays:**\n• Dropdown, Popover, Dialog, Drawer"
+    },
+    {
+      "heading": "Quick Start",
+      "body": "Install Project B and start building:\n\n```bash\nnpm install @example/project-b\n# or\nyarn add @example/project-b\n```\n\n```jsx\nimport { Button, Card, ThemeProvider } from '@example/project-b';\nimport '@example/project-b/dist/styles.css';\n\nfunction App() {\n  return (\n    <ThemeProvider>\n      <Card>\n        <Button variant=\"primary\" size=\"large\">\n          Get Started\n        </Button>\n      </Card>\n    </ThemeProvider>\n  );\n}\n```\n\nFor custom theming, create your theme configuration and pass it to ThemeProvider."
+    },
+    {
+      "heading": "Browser Support",
+      "body": "Project B supports all modern browsers and follows React's compatibility guidelines:\n\n• Chrome 76+\n• Firefox 68+\n• Safari 12+\n• Edge 79+\n• React 16.8+ (hooks required)\n• TypeScript 4.1+\n• Node.js 14+\n\nFor Internet Explorer support, additional polyfills may be required."
+    }
+  ],
+  "tags": [
+    "react",
+    "components",
+    "ui-library",
+    "typescript",
+    "accessibility",
+    "design-system",
+    "storybook",
+    "frontend"
+  ],
+  "maintainers": [
+    {
+      "name": "Sarah Designer",
+      "email": "sarah@example.com",
+      "github": "sarahdesign"
+    },
+    {
+      "name": "Mike Frontend",
+      "email": "mike@example.com",
+      "github": "mikefront"
+    },
+    {
+      "name": "Alex A11y",
+      "email": "alex@example.com",
+      "github": "alexa11y"
+    }
+  ],
+  "license": "MIT",
+  "created": "2023-05-20",
+  "updated": "2025-10-05",
+  "stats": {
+    "components": 52,
+    "weekly_downloads": 45000,
+    "bundle_size": "125kb (minified + gzipped)",
+    "test_coverage": "96%"
+  }
+}

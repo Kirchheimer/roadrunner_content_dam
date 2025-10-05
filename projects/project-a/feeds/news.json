@@ -1,0 +1,46 @@
+[
+  {
+    "id": "news-003",
+    "date": "2025-10-05",
+    "title": "Version 1.2 Released - Node 20 Support",
+    "summary": "Major update adds improved support for Node.js 20, new API endpoints, and performance optimizations. Breaking changes include deprecated legacy matcher API.",
+    "category": "release",
+    "author": "Jane Developer",
+    "tags": ["release", "nodejs", "breaking-changes"],
+    "url": "https://project-a-docs.example.com/releases/v1.2.0",
+    "content": "We're excited to announce Project A v1.2.0, our biggest release yet! This version brings full compatibility with Node.js 20, introduces powerful new API endpoints, and delivers significant performance improvements.\n\n**Key Highlights:**\n• Full Node.js 20 support with native ES modules\n• New async/await testing utilities\n• 30% faster test execution times\n• Improved TypeScript integration\n• Enhanced code coverage reporting\n\n**Breaking Changes:**\n• Legacy matcher API has been removed (use new syntax)\n• Minimum Node.js version is now 16\n• Configuration file format updated\n\nSee our migration guide for easy upgrade steps."
+  },
+  {
+    "id": "news-002", 
+    "date": "2025-08-22",
+    "title": "Project A Reaches 1 Million Downloads",
+    "summary": "Celebrating a major milestone as Project A surpasses 1 million npm downloads, showing strong adoption in the JavaScript testing community.",
+    "category": "milestone",
+    "author": "Bob Tester",
+    "tags": ["milestone", "community", "adoption"],
+    "url": "https://project-a-docs.example.com/blog/1-million-downloads",
+    "content": "Today marks an incredible milestone for Project A - we've officially reached 1 million downloads on npm! 🎉\n\nThis achievement wouldn't be possible without our amazing community of developers who have embraced Project A as their testing framework of choice. Here are some impressive stats:\n\n• 1,000,000+ total downloads\n• 50,000+ weekly downloads\n• 2,500+ GitHub stars\n• Used by companies like TechCorp, StartupXYZ, and DevAgency\n• 200+ community contributors\n\nThank you to everyone who has contributed code, reported bugs, written documentation, or simply used Project A in their projects. Your support drives us to keep improving and innovating."
+  },
+  {
+    "id": "news-001",
+    "date": "2025-06-15", 
+    "title": "New Documentation Site Launch",
+    "summary": "Comprehensive new documentation site goes live with interactive examples, detailed guides, and improved search functionality.",
+    "category": "documentation",
+    "author": "Jane Developer", 
+    "tags": ["documentation", "website", "guides"],
+    "url": "https://project-a-docs.example.com/blog/new-docs",
+    "content": "We're thrilled to announce the launch of our completely redesigned documentation site! After months of work, we've created a comprehensive resource that makes learning and using Project A easier than ever.\n\n**What's New:**\n• Interactive code examples you can run in your browser\n• Step-by-step tutorials for beginners\n• Advanced guides for complex testing scenarios\n• Improved search with instant results\n• Mobile-friendly responsive design\n• Dark mode support\n\n**Key Sections:**\n• Getting Started - Perfect for newcomers\n• API Reference - Complete documentation of all methods\n• Best Practices - Tips from experienced users\n• Recipes - Solutions to common testing challenges\n• Migration Guides - Easy upgrades from other frameworks\n\nVisit the new docs at project-a-docs.example.com and let us know what you think!"
+  },
+  {
+    "id": "news-000",
+    "date": "2025-04-10",
+    "title": "Project A Initial Release",
+    "summary": "First stable release of Project A testing framework launches with core functionality, zero-config setup, and comprehensive testing utilities.",
+    "category": "release",
+    "author": "Jane Developer",
+    "tags": ["release", "launch", "stable"],
+    "url": "https://project-a-docs.example.com/blog/initial-release", 
+    "content": "After months of development and testing, we're proud to announce the initial stable release of Project A!\n\n**Core Features:**\n• Zero configuration required - works out of the box\n• Lightning-fast test execution\n• Built-in assertions and matchers\n• Mocking and stubbing capabilities\n• Code coverage reporting\n• Watch mode for development\n• TypeScript support\n\n**Why Project A?**\nWe built Project A because we were frustrated with the complexity and slow performance of existing testing frameworks. Our goal was to create something that 'just works' without requiring extensive configuration or setup.\n\n**What's Next?**\nWe're already working on exciting features for future releases including:\n• Browser testing capabilities\n• Visual regression testing\n• Enhanced parallel execution\n• Plugin ecosystem\n\nTry Project A today: `npm install --save-dev project-a`"
+  }
+]

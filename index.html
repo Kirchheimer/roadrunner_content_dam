@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Asset Repository</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1><i class="fas fa-database"></i> Digital Asset Repository</h1>
+            <p>Headless content source for multiple client applications</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="intro">
+            <h2>About This Repository</h2>
+            <p>This static repository serves as a centralized content source for multiple client applications. Each project contains structured content, feeds, and assets accessible via public URLs.</p>
+            
+            <div class="features">
+                <div class="feature">
+                    <i class="fas fa-code"></i>
+                    <h3>Static & Fast</h3>
+                    <p>No backend required - served directly from GitHub Pages</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-project-diagram"></i>
+                    <h3>Organized Projects</h3>
+                    <p>Each project has its own directory with content, feeds, and assets</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-plug"></i>
+                    <h3>Easy Integration</h3>
+                    <p>JSON APIs and embeddable HTML for seamless client integration</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects">
+            <h2>Available Projects</h2>
+            <div id="project-list" class="project-grid">
+                <div class="loading">
+                    <i class="fas fa-spinner fa-spin"></i>
+                    Loading projects...
+                </div>
+            </div>
+        </section>
+
+        <section class="usage">
+            <h2>Usage Examples</h2>
+            <div class="code-examples">
+                <div class="example">
+                    <h3>Fetch Project Content</h3>
+                    <pre><code>fetch('https://[username].github.io/[repo]/projects/project-a/content.json')
+  .then(res => res.json())
+  .then(data => renderProject(data));</code></pre>
+                </div>
+                <div class="example">
+                    <h3>Embed Project Page</h3>
+                    <pre><code>&lt;iframe
+  src="https://[username].github.io/[repo]/projects/project-a/"
+  width="100%"
+  height="600"&gt;
+&lt;/iframe&gt;</code></pre>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Digital Asset Repository. <a href="sitemap.json">Sitemap JSON</a></p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

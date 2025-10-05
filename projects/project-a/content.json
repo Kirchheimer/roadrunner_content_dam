@@ -1,0 +1,50 @@
+{
+  "title": "Project A - JavaScript Testing Framework",
+  "description": "A modern, lightweight JavaScript testing framework designed for speed and simplicity. Perfect for unit testing, integration testing, and end-to-end testing workflows.",
+  "version": "1.2.0",
+  "status": "stable",
+  "repository": "https://github.com/example/project-a",
+  "documentation": "https://project-a-docs.example.com",
+  "sections": [
+    {
+      "heading": "Overview",
+      "body": "Project A provides a comprehensive testing solution for JavaScript applications. Built from the ground up with performance in mind, it offers lightning-fast test execution without sacrificing functionality. Whether you're testing React components, Node.js APIs, or vanilla JavaScript functions, Project A has you covered."
+    },
+    {
+      "heading": "Key Features",
+      "body": "• Zero configuration setup - works out of the box\n• Parallel test execution for maximum speed\n• Built-in mocking and stubbing capabilities\n• Code coverage reports with detailed insights\n• Watch mode for continuous development\n• TypeScript support with full type safety\n• Snapshot testing for UI components\n• Custom reporters and extensible architecture"
+    },
+    {
+      "heading": "Quick Start",
+      "body": "Getting started with Project A is simple:\n\n1. Install via npm: `npm install --save-dev project-a`\n2. Add test script to package.json: `\"test\": \"project-a\"`\n3. Create your first test file: `example.test.js`\n4. Run tests: `npm test`\n\nNo configuration files needed - Project A uses sensible defaults that work for most projects."
+    },
+    {
+      "heading": "Browser Support",
+      "body": "Project A supports all modern browsers and Node.js environments:\n• Chrome 90+\n• Firefox 88+\n• Safari 14+\n• Edge 90+\n• Node.js 16+\n\nFor older browser support, Project A includes polyfills and transpilation options."
+    }
+  ],
+  "tags": [
+    "javascript",
+    "testing",
+    "framework",
+    "unit-testing",
+    "integration-testing",
+    "node.js",
+    "browser"
+  ],
+  "maintainers": [
+    {
+      "name": "Jane Developer",
+      "email": "jane@example.com",
+      "github": "janedev"
+    },
+    {
+      "name": "Bob Tester",
+      "email": "bob@example.com", 
+      "github": "bobtests"
+    }
+  ],
+  "license": "MIT",
+  "created": "2024-01-15",
+  "updated": "2025-10-05"
+}

@@ -1,0 +1,121 @@
+[
+  {
+    "id": "update-005",
+    "date": "2025-10-05",
+    "type": "feature",
+    "title": "New Async Testing Utilities",
+    "summary": "Added waitFor(), waitForElementToBeRemoved(), and improved promise handling in test assertions.",
+    "version": "1.2.0",
+    "impact": "minor",
+    "details": {
+      "changes": [
+        "Added waitFor() utility for polling assertions",
+        "Added waitForElementToBeRemoved() for DOM testing",
+        "Improved async/await error handling",
+        "New timeout configuration options"
+      ],
+      "migration": "No breaking changes - new utilities are opt-in"
+    }
+  },
+  {
+    "id": "update-004", 
+    "date": "2025-09-28",
+    "type": "performance",
+    "title": "Test Execution Speed Improvements",
+    "summary": "Optimized test runner performance resulting in 30% faster execution times for large test suites.",
+    "version": "1.2.0",
+    "impact": "minor",
+    "details": {
+      "changes": [
+        "Optimized file watching and change detection",
+        "Improved parallel test execution algorithm", 
+        "Reduced memory usage during test runs",
+        "Faster test discovery and loading"
+      ],
+      "benchmarks": {
+        "small_suite": "20% faster (100 tests)",
+        "medium_suite": "25% faster (500 tests)", 
+        "large_suite": "30% faster (1000+ tests)"
+      }
+    }
+  },
+  {
+    "id": "update-003",
+    "date": "2025-09-15",
+    "type": "bugfix", 
+    "title": "Fixed Memory Leaks in Watch Mode",
+    "summary": "Resolved memory leak issues that occurred during long-running watch mode sessions.",
+    "version": "1.1.3",
+    "impact": "patch",
+    "details": {
+      "issues_fixed": [
+        "#234 - Memory usage grows over time in watch mode",
+        "#245 - File handles not properly closed",
+        "#251 - Test cleanup not running in certain scenarios"
+      ],
+      "technical_details": "Improved cleanup of test modules and file watchers between runs"
+    }
+  },
+  {
+    "id": "update-002",
+    "date": "2025-09-01", 
+    "type": "feature",
+    "title": "Enhanced TypeScript Integration",
+    "summary": "Improved TypeScript support with better type inference and new utility types for testing.",
+    "version": "1.1.2",
+    "impact": "minor",
+    "details": {
+      "changes": [
+        "Added MockedFunction<T> utility type",
+        "Improved type inference for mock functions",
+        "Better IntelliSense support in VS Code",
+        "New @types/project-a package for type definitions"
+      ],
+      "typescript_versions": ["4.5+", "4.9+", "5.0+"]
+    }
+  },
+  {
+    "id": "update-001",
+    "date": "2025-08-20",
+    "type": "documentation",
+    "title": "API Reference Documentation Updated", 
+    "summary": "Comprehensive update to API documentation with new examples and improved organization.",
+    "version": "1.1.1",
+    "impact": "documentation",
+    "details": {
+      "sections_updated": [
+        "Core API methods",
+        "Mock and stub utilities", 
+        "Configuration options",
+        "Plugin development guide"
+      ],
+      "new_content": [
+        "50+ new code examples",
+        "Video tutorials for complex features",
+        "Common patterns and best practices",
+        "Troubleshooting guide"
+      ]
+    }
+  },
+  {
+    "id": "update-000",
+    "date": "2025-08-10",
+    "type": "security",
+    "title": "Security Update - Dependency Vulnerabilities Fixed",
+    "summary": "Updated dependencies to address security vulnerabilities in third-party packages.",
+    "version": "1.1.0",
+    "impact": "patch", 
+    "details": {
+      "vulnerabilities_fixed": [
+        "CVE-2025-12345 - Low severity in chalk dependency",
+        "CVE-2025-12346 - Medium severity in glob dependency"
+      ],
+      "dependencies_updated": [
+        "chalk: 4.1.0 → 5.0.1",
+        "glob: 7.1.6 → 8.0.3",
+        "minimatch: 3.0.4 → 5.1.0"
+      ],
+      "action_required": "Run 'npm update project-a' to get the latest secure version"
+    }
+  }
+]

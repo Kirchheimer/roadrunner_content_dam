@@ -1,0 +1,37 @@
+{
+  "name": "digital-asset-repository",
+  "version": "1.0.0",
+  "description": "Static digital asset repository hosted on GitHub Pages, serving as a headless content source for multiple client applications.",
+  "main": "generate-sitemap.js",
+  "scripts": {
+    "build": "node generate-sitemap.js",
+    "serve": "npx http-server . -p 8080 -c-1 -o",
+    "dev": "npm run build && npm run serve",
+    "validate": "node validate-content.js",
+    "test": "node test-endpoints.js"
+  },
+  "keywords": [
+    "static-site",
+    "content-repository",
+    "github-pages",
+    "headless-cms",
+    "json-api",
+    "digital-assets"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/[username]/digital-asset-site.git"
+  },
+  "homepage": "https://[username].github.io/digital-asset-site/",
+  "bugs": {
+    "url": "https://github.com/[username]/digital-asset-site/issues"
+  }
+}

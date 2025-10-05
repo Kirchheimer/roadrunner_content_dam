@@ -1,0 +1,46 @@
+[
+  {
+    "id": "news-b-004",
+    "date": "2025-10-05",
+    "title": "Version 2.1.5 - New Form Components & A11y Improvements",
+    "summary": "Latest release includes DatePicker, FileUpload components, enhanced accessibility features, and performance optimizations across the library.",
+    "category": "release",
+    "author": "Sarah Designer",
+    "tags": ["release", "components", "accessibility", "forms"],
+    "url": "https://project-b-docs.example.com/releases/v2.1.5",
+    "content": "We're excited to release Project B v2.1.5 with significant improvements to form handling and accessibility!\n\n**New Components:**\n• DatePicker - Full-featured date selection with calendar popup\n• FileUpload - Drag & drop file upload with progress tracking\n• RangeSlider - Dual-thumb range selection component\n• ColorPicker - HSL/RGB color selection with swatches\n\n**Accessibility Improvements:**\n• Enhanced screen reader support for all form components\n• Improved keyboard navigation for complex widgets\n• Better focus management in modal and drawer components\n• ARIA live regions for dynamic content updates\n\n**Performance:**\n• Reduced bundle size by 15% through better tree-shaking\n• Faster theme switching with CSS variables\n• Optimized rendering for large data tables\n• Improved memory usage in list virtualization\n\n**Bug Fixes:**\n• Fixed tooltip positioning issues on mobile devices\n• Resolved tab focus order in nested form layouts\n• Fixed theme flashing during SSR hydration"
+  },
+  {
+    "id": "news-b-003",
+    "date": "2025-08-15",
+    "title": "Storybook 7.0 Migration & Interactive Documentation",
+    "summary": "Updated documentation site with Storybook 7.0, adding interactive component playground and improved developer experience.",
+    "category": "documentation",
+    "author": "Mike Frontend",
+    "tags": ["documentation", "storybook", "developer-experience"],
+    "url": "https://project-b-docs.example.com/blog/storybook-v7-migration",
+    "content": "Our component documentation just got a major upgrade with the migration to Storybook 7.0!\n\n**New Documentation Features:**\n• Interactive component playground - modify props and see results instantly\n• Code generation - copy JSX code directly from the playground\n• Improved search and filtering across all components\n• Dark mode documentation theme\n• Mobile-responsive documentation layout\n\n**Enhanced Stories:**\n• All components now have comprehensive usage examples\n• Accessibility testing built into every story\n• Performance profiling for complex components\n• Visual regression testing screenshots\n\n**Developer Experience:**\n• Faster hot reload during development\n• Better TypeScript integration in stories\n• Automated screenshot generation for docs\n• Integration with design tokens and theme values\n\n**What's Next:**\nWe're working on adding video tutorials for complex component usage patterns and interactive design system guidelines.\n\nExplore the new documentation at project-b-storybook.example.com"
+  },
+  {
+    "id": "news-b-002",
+    "date": "2025-07-01",
+    "title": "50,000 Weekly Downloads Milestone",
+    "summary": "Project B reaches new adoption milestone with growing community and expanding ecosystem of third-party themes and plugins.",
+    "category": "milestone",
+    "author": "Sarah Designer",
+    "tags": ["milestone", "community", "ecosystem"],
+    "url": "https://project-b-docs.example.com/blog/50k-downloads",
+    "content": "We're thrilled to announce that Project B has reached 50,000 weekly downloads on npm! 🚀\n\nThis incredible growth reflects the trust that developers place in our component library. Here's what the community has accomplished:\n\n**Adoption Stats:**\n• 50,000+ weekly downloads\n• 8,500+ GitHub stars\n• 150+ community contributors\n• Used by 2,000+ production applications\n• 15+ third-party theme packages\n\n**Community Highlights:**\n• Material Design theme by @designsys-team (5,000+ downloads)\n• Ant Design compatibility layer by @ui-bridge\n• Vue.js port started by community members\n• Figma design system kit with 10,000+ installs\n\n**Enterprise Adoption:**\nMajor companies using Project B include:\n• TechCorp - Complete design system migration\n• StartupUnicorn - 50+ component customizations\n• FinanceApp - High-security form implementations\n• HealthTech - WCAG AAA compliance requirements\n\n**Thank You:**\nNone of this would be possible without our amazing community. From bug reports to feature requests, documentation improvements to theme contributions - every interaction helps make Project B better.\n\nJoin our Discord community to connect with other developers and share your Project B creations!"
+  },
+  {
+    "id": "news-b-001",
+    "date": "2025-05-10",
+    "title": "Dark Mode & Theme Customization System Launch",
+    "summary": "Major theming overhaul introduces dark mode support, CSS custom properties, and flexible theme customization API for diverse design requirements.",
+    "category": "feature",
+    "author": "Alex A11y",
+    "tags": ["theming", "dark-mode", "customization", "css"],
+    "url": "https://project-b-docs.example.com/blog/theming-system-launch",
+    "content": "Today we're launching the most requested feature - comprehensive dark mode support and a powerful theme customization system!\n\n**Dark Mode Features:**\n• Automatic system preference detection\n• Manual theme switching with persistent storage\n• Smooth transitions between light and dark modes\n• High contrast mode support for accessibility\n• Custom color palette generation\n\n**Theme Customization:**\n• CSS custom properties for runtime theme changes\n• JSON-based theme configuration\n• Component-level theme overrides\n• Typography scale customization\n• Spacing and border radius tokens\n\n**Developer Experience:**\n• Theme preview in Storybook documentation\n• TypeScript support for theme objects\n• Build-time theme validation\n• Hot reload for theme changes during development\n\n**Breaking Changes:**\n• Legacy theme API deprecated (migration guide available)\n• Some CSS class names updated for consistency\n• Minimum React version now 16.8+ (hooks required)\n\n**Migration Guide:**\nWe've created a comprehensive migration guide and automated migration scripts to help upgrade existing projects.\n\n**Example Usage:**\n```jsx\nimport { createTheme, ThemeProvider } from '@example/project-b';\n\nconst customTheme = createTheme({\n  colors: {\n    primary: '#6366f1',\n    background: '#1f2937'\n  },\n  typography: {\n    fontFamily: 'Inter, sans-serif'\n  }\n});\n\n<ThemeProvider theme={customTheme}>\n  <App />\n</ThemeProvider>\n```"
+  }
+]

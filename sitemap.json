@@ -1,0 +1,54 @@
+{
+  "last_updated": "2025-10-05",
+  "generated_at": "2025-10-05T18:13:03.617Z",
+  "total_projects": 2,
+  "projects": [
+    {
+      "id": "project-a",
+      "title": "Project A - JavaScript Testing Framework",
+      "path": "projects/project-a/",
+      "feeds": [
+        "news.json",
+        "updates.json"
+      ],
+      "description": "A modern, lightweight JavaScript testing framework designed for speed and simplicity. Perfect for unit testing, integration testing, and end-to-end testing workflows.",
+      "version": "1.2.0",
+      "status": "stable",
+      "tags": [
+        "javascript",
+        "testing",
+        "framework",
+        "unit-testing",
+        "integration-testing",
+        "node.js",
+        "browser"
+      ]
+    },
+    {
+      "id": "project-b",
+      "title": "Project B - React UI Component Library",
+      "path": "projects/project-b/",
+      "feeds": [
+        "news.json"
+      ],
+      "description": "A comprehensive collection of accessible, customizable React components built with TypeScript and modern design principles. Perfect for building scalable web applications.",
+      "version": "2.1.5",
+      "status": "stable",
+      "tags": [
+        "react",
+        "components",
+        "ui-library",
+        "typescript",
+        "accessibility",
+        "design-system",
+        "storybook",
+        "frontend"
+      ]
+    }
+  ],
+  "meta": {
+    "generator": "Digital Asset Repository Sitemap Generator",
+    "version": "1.0.0",
+    "description": "Auto-generated project index for static content repository"
+  }
+}
