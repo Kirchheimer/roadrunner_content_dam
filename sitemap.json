@@ -1,8 +1,31 @@
 {
   "last_updated": "2025-10-05",
-  "generated_at": "2025-10-05T18:13:03.617Z",
-  "total_projects": 2,
+  "generated_at": "2025-10-05T21:44:15.448Z",
+  "total_projects": 3,
   "projects": [
+    {
+      "id": "cwcagscanner",
+      "title": "CWCAGScanner - Advanced Accessibility Testing Platform",
+      "path": "projects/cwcagscanner/",
+      "feeds": [
+        "news.json"
+      ],
+      "description": "Effortless accessibility compliance with automated WCAG scanning. Get instant, actionable reports covering WCAG 2.0, 2.1, and 2.2 at all compliance levels with developer-friendly visual guides.",
+      "version": "2.4.1",
+      "status": "active-development",
+      "tags": [
+        "accessibility",
+        "wcag",
+        "compliance",
+        "testing",
+        "automation",
+        "developer-tools",
+        "a11y",
+        "web-standards",
+        "ada-compliance",
+        "section-508"
+      ]
+    },
     {
       "id": "project-a",
       "title": "Project A - JavaScript Testing Framework",

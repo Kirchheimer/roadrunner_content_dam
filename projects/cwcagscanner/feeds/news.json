@@ -1,0 +1,46 @@
+[
+  {
+    "id": "news-cw-004",
+    "date": "2025-10-05",
+    "title": "Version 2.4.1 Released - Enhanced WCAG 2.2 Support",
+    "summary": "Latest release expands WCAG 2.2 guidelines support with new success criteria testing, improved mobile accessibility validation, and enhanced developer workflow integration.",
+    "category": "release",
+    "author": "Accessibility Team",
+    "tags": ["release", "wcag-2.2", "mobile", "developer-tools"],
+    "url": "https://cwcagscanner-docs.example.com/releases/v2.4.1",
+    "content": "We're excited to announce CWCAGScanner v2.4.1 with comprehensive WCAG 2.2 support and significant improvements to mobile accessibility testing!\n\n**New WCAG 2.2 Features:**\n• Focus Not Obscured testing for better keyboard navigation\n• Dragging Movements alternative input validation\n• Target Size (Minimum) checks for touch interfaces\n• Focus Appearance contrast and visibility testing\n• Consistent Help location and format validation\n\n**Enhanced Mobile Testing:**\n• Improved touch target size validation\n• Mobile screen reader compatibility testing\n• Gesture-based navigation accessibility checks\n• Responsive design accessibility impact analysis\n\n**Developer Workflow Improvements:**\n• VS Code extension with inline accessibility hints\n• GitHub Actions integration for PR accessibility checks\n• Jest plugin for automated accessibility unit testing\n• Improved CLI tool with configuration options\n\n**Bug Fixes:**\n• Fixed false positives in color contrast detection\n• Resolved issues with dynamic content scanning\n• Improved ARIA validation accuracy"
+  },
+  {
+    "id": "news-cw-003",
+    "date": "2025-08-30",
+    "title": "Enterprise Dashboard Launch - Team Collaboration Features",
+    "summary": "New enterprise dashboard provides centralized accessibility management, team collaboration tools, and advanced reporting capabilities for organizations.",
+    "category": "feature",
+    "author": "Product Team",
+    "tags": ["enterprise", "dashboard", "collaboration", "reporting"],
+    "url": "https://cwcagscanner-docs.example.com/blog/enterprise-dashboard",
+    "content": "Today we're launching our comprehensive Enterprise Dashboard, designed to help organizations manage accessibility at scale!\n\n**Team Management:**\n• Role-based access control for different team members\n• Project assignment and responsibility tracking\n• Progress monitoring with accountability metrics\n• Custom notification systems for issue resolution\n\n**Advanced Reporting:**\n• Executive summary reports with trend analysis\n• Detailed technical reports for development teams\n• Compliance status dashboards with real-time updates\n• Custom report generation with branding options\n\n**Workflow Integration:**\n• Jira integration for issue tracking and management\n• Slack notifications for critical accessibility violations\n• API endpoints for custom dashboard integration\n• Automated weekly and monthly compliance reports\n\n**Multi-Site Management:**\n• Centralized scanning for multiple websites and applications\n• Site comparison and benchmarking tools\n• Bulk remediation guidance and prioritization\n• Cross-site accessibility pattern analysis\n\nThe Enterprise Dashboard is available now for teams of 10+ users with dedicated support and training included."
+  },
+  {
+    "id": "news-cw-002",
+    "date": "2025-07-15",
+    "title": "AI-Powered Remediation Suggestions Now Available",
+    "summary": "Revolutionary AI system provides contextual, code-specific remediation suggestions, reducing accessibility fix time by up to 70% for development teams.",
+    "category": "feature",
+    "author": "AI Research Team",
+    "tags": ["ai", "machine-learning", "remediation", "developer-experience"],
+    "url": "https://cwcagscanner-docs.example.com/blog/ai-remediation",
+    "content": "We're thrilled to introduce our groundbreaking AI-powered remediation engine that transforms how developers fix accessibility issues!\n\n**Intelligent Code Analysis:**\n• Context-aware suggestions based on your specific codebase\n• Framework-specific remediation (React, Vue, Angular, vanilla JS)\n• CSS-in-JS and traditional stylesheet optimization\n• Component library integration and best practices\n\n**Smart Remediation Features:**\n• One-click fixes for common accessibility violations\n• Multiple solution approaches ranked by effectiveness\n• Before/after code comparisons with visual previews\n• Estimated implementation time and complexity ratings\n\n**Learning Capabilities:**\n• Adapts to your team's coding patterns and preferences\n• Learns from successful remediation implementations\n• Suggests proactive improvements based on site patterns\n• Custom rule creation based on your accessibility requirements\n\n**Developer Experience:**\n• IDE integration with inline suggestions\n• Copy-paste ready code snippets\n• Link to relevant WCAG documentation and examples\n• Video tutorials for complex accessibility implementations\n\n**Results:**\nBeta testing showed:\n• 70% reduction in time to fix accessibility issues\n• 85% improvement in fix accuracy and effectiveness\n• 60% decrease in accessibility regressions\n• 90% developer satisfaction with AI suggestions\n\nThe AI remediation engine is rolling out to all Pro and Enterprise users this month."
+  },
+  {
+    "id": "news-cw-001",
+    "date": "2025-05-20",
+    "title": "CWCAGScanner Platform Launch - Next Generation Accessibility Testing",
+    "summary": "Official launch of comprehensive WCAG testing platform with automated scanning, developer tools, and enterprise features for accessibility compliance.",
+    "category": "launch",
+    "author": "Founder & CEO",
+    "tags": ["launch", "platform", "wcag", "accessibility", "compliance"],
+    "url": "https://cwcagscanner-docs.example.com/blog/platform-launch",
+    "content": "Today marks a significant milestone in web accessibility - the official launch of CWCAGScanner, the most comprehensive WCAG testing platform available!\n\n**Why CWCAGScanner?**\nAfter years of working with development teams struggling with accessibility compliance, we realized the need for a platform that doesn't just identify issues but provides actionable, developer-friendly solutions.\n\n**Launch Features:**\n• Complete WCAG 2.0, 2.1, and 2.2 coverage (A, AA, AAA)\n• Real-time scanning with instant feedback\n• Visual issue highlighting with code location precision\n• Component and page-level testing capabilities\n• Regression tracking and baseline establishment\n• CI/CD integration for automated accessibility testing\n\n**Developer-First Approach:**\n• Code snippets and implementation examples\n• Multiple solution approaches for each violation\n• Integration with popular development tools\n• Comprehensive documentation and video tutorials\n\n**Enterprise Ready:**\n• Team collaboration and project management\n• Custom reporting and branding options\n• API access for workflow integration\n• Expert manual audit services\n• Dedicated support and training\n\n**Standards Compliance:**\n• ADA Section 508 compliance\n• European Accessibility Act (EAA) support\n• EN 301 549 technical specifications\n• Custom compliance profiles\n\n**Getting Started:**\nSign up for a free account and scan your first page in under 2 minutes. Pro and Enterprise plans are available with advanced features and dedicated support.\n\nJoin thousands of developers, designers, and organizations already using CWCAGScanner to build more accessible web experiences!"
+  }
+]
