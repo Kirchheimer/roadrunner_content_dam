@@ -463,16 +463,12 @@
                             </p>
                         </div>
                         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                            <a href="${escapeHtml(section.cta.primary.url || '#')}" 
-                               target="${section.cta.primary.target || '_blank'}" 
-                               class="btn btn-primary btn-lg">
-                                ${escapeHtml(section.cta.primary.text || section.cta.primary)}
-                            </a>
-                            <a href="${escapeHtml(section.cta.secondary.url || '#')}" 
-                               target="${section.cta.secondary.target || '_blank'}" 
-                               class="btn btn-outline btn-lg">
-                                ${escapeHtml(section.cta.secondary.text || section.cta.secondary)}
-                            </a>
+                            <button class="btn btn-primary btn-lg" data-cta="primary">
+                                ${escapeHtml(section.cta.primary)}
+                            </button>
+                            <button class="btn btn-outline btn-lg" data-cta="secondary">
+                                ${escapeHtml(section.cta.secondary)}
+                            </button>
                         </div>
                     </div>
                 </div>
