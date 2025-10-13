@@ -16,7 +16,7 @@
         "target": "_parent"
       },
       "secondary": {
-        "text": "View Demo", 
+        "text": "View Sample", 
         "url": "https://wcagscanner.com/templates/target_sample.html",
         "target": "_parent"
       }
