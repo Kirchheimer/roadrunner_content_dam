@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="bumblebee">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CWCAGScanner - Hero Section</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div id="project-content">
+        <div class="loading loading-spinner loading-lg mx-auto block"></div>
+        <p class="text-center mt-4">Loading hero content...</p>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            loadHeroContent();
+        });
+
+        async function loadHeroContent() {
+            try {
+                const response = await fetch('./content.json');
+                const project = await response.json();
+                
+                if (project.hero) {
+                    renderHeroContent(project.hero);
+                } else {
+                    showError('No hero content available');
+                }
+                
+            } catch (error) {
+                console.error('Error loading hero content:', error);
+                showError('Error loading content. Please check the content.json file.');
+            }
+        }
+
+        function renderHeroContent(hero) {
+            const contentDiv = document.getElementById('project-content');
+            
+            contentDiv.innerHTML = `
+                <div class="hero bg-base-200 min-h-96">
+                    <div class="hero-content text-center">
+                        <div class="max-w-2xl">
+                            <h1 class="text-4xl md:text-5xl font-bold text-base-content mb-6">
+                                ${escapeHtml(hero.title)}
+                            </h1>
+                            <p class="text-lg text-base-content/70 mb-8 leading-relaxed">
+                                ${escapeHtml(hero.subtitle)}
+                            </p>
+                            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                                <button class="btn btn-primary btn-lg">
+                                    ${escapeHtml(hero.cta.primary)}
+                                </button>
+                                <button class="btn btn-outline btn-lg">
+                                    ${escapeHtml(hero.cta.secondary)}
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        function showError(message) {
+            const contentDiv = document.getElementById('project-content');
+            contentDiv.innerHTML = `
+                <div class="alert alert-error">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <span>${message}</span>
+                </div>
+            `;
+        }
+
+        function escapeHtml(text) {
+            if (typeof text !== 'string') return text;
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+    </script>
+</body>
+</html>

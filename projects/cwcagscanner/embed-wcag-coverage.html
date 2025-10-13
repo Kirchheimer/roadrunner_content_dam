@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="bumblebee">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CWCAGScanner - WCAG Coverage</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div id="project-content">
+        <div class="loading loading-spinner loading-lg mx-auto block"></div>
+        <p class="text-center mt-4">Loading content...</p>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            loadWCAGCoverageContent();
+        });
+
+        async function loadWCAGCoverageContent() {
+            try {
+                const response = await fetch('./content.json');
+                const project = await response.json();
+                
+                const section = project.sections.find(s => s.id === 'wcag-coverage');
+                
+                if (section) {
+                    renderWCAGCoverageContent(section);
+                } else {
+                    showError('WCAG Coverage section not found');
+                }
+                
+            } catch (error) {
+                console.error('Error loading content:', error);
+                showError('Error loading content. Please check the content.json file.');
+            }
+        }
+
+        function renderWCAGCoverageContent(section) {
+            const contentDiv = document.getElementById('project-content');
+            
+            const cardsHtml = section.cards.map(card => `
+                <div class="card bg-success text-success-content shadow-lg">
+                    <div class="card-body">
+                        <h3 class="card-title text-2xl mb-4">
+                            ${escapeHtml(card.title)}
+                        </h3>
+                        <p class="mb-6 opacity-90">
+                            ${escapeHtml(card.description)}
+                        </p>
+                        <div class="space-y-2">
+                            ${card.features.map(feature => `
+                                <div class="flex items-center gap-2">
+                                    <div class="badge badge-neutral badge-sm">✓</div>
+                                    <span class="text-sm">${escapeHtml(feature)}</span>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+            
+            contentDiv.innerHTML = `
+                <div class="py-8">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl md:text-4xl font-bold text-base-content mb-4">
+                            ${escapeHtml(section.heading)}
+                        </h2>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+                        ${cardsHtml}
+                    </div>
+                </div>
+            `;
+        }
+
+        function showError(message) {
+            const contentDiv = document.getElementById('project-content');
+            contentDiv.innerHTML = `
+                <div class="alert alert-error">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <span>${message}</span>
+                </div>
+            `;
+        }
+
+        function escapeHtml(text) {
+            if (typeof text !== 'string') return text;
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+    </script>
+</body>
+</html>
