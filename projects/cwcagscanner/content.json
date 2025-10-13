@@ -10,7 +10,12 @@
     "title": "Effortless Accessibility Scanning for Your Website",
     "subtitle": "Stay compliant with upcoming US regulations. Scan your site for WCAG violations—free, fast, and continuously monitored.",
     "cta": {
-      "Primary": {
+      "primary": {
+        "text": "Start Free Scan",
+        "url": "https://wcagscanner.com/scan",
+        "target": "_parent"
+      },
+      "secondary": {
         "text": "View Sample", 
         "url": "https://wcagscanner.com/templates/target_sample.html",
         "target": "_parent"
@@ -434,7 +439,12 @@
       "cta": {
         "heading": "Ready to Protect Your Organization?",
         "body": "Join thousands of organizations using WCAG Scanner to maintain compliance, avoid legal risk, and create accessible experiences for all users. Start with a free scan to see where you stand, then choose the plan that fits your needs—from single-site monitoring to enterprise-wide coverage.\n\nOur team is here to help you succeed. Get expert guidance on remediation priorities, compliance strategies, and accessibility best practices. Schedule a consultation or start scanning now.",
-        "Primary": {
+        "primary": {
+          "text": "Start Free Scan",
+          "url": "https://wcagscanner.com/scan#popup",
+          "target": "_parent"
+        },
+        "secondary": {
           "text": "View Sample", 
           "url": "https://wcagscanner.com/templates/target_sample.html",
           "target": "_parent"
