@@ -10,12 +10,7 @@
     "title": "Effortless Accessibility Scanning for Your Website",
     "subtitle": "Stay compliant with upcoming US regulations. Scan your site for WCAG violations—free, fast, and continuously monitored.",
     "cta": {
-      "primary": {
-        "text": "Start Free Scan",
-        "url": "https://wcagscanner.com/scan",
-        "target": "_parent"
-      },
-      "secondary": {
+      "Primary": {
         "text": "View Sample", 
         "url": "https://wcagscanner.com/templates/target_sample.html",
         "target": "_parent"
