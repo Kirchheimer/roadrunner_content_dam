@@ -1,33 +1,211 @@
 {
-  "title": "CWCAGScanner - Advanced Accessibility Testing Platform",
-  "description": "Effortless accessibility compliance with automated WCAG scanning. Get instant, actionable reports covering WCAG 2.0, 2.1, and 2.2 at all compliance levels with developer-friendly visual guides.",
+  "title": "CWCAGScanner - Effortless Accessibility Scanning",
+  "description": "Stay compliant with upcoming US regulations. Scan your site for WCAG violations—free, fast, and continuously monitored.",
   "version": "2.4.1",
   "status": "active-development",
   "repository": "https://github.com/example/cwcagscanner",
   "documentation": "https://cwcagscanner-docs.example.com",
   "demo": "https://scanner.example.com/demo",
+  "hero": {
+    "title": "Effortless Accessibility Scanning for Your Website",
+    "subtitle": "Stay compliant with upcoming US regulations. Scan your site for WCAG violations—free, fast, and continuously monitored.",
+    "cta": {
+      "primary": "Start Free Scan",
+      "secondary": "View Demo"
+    },
+    "background": "gradient-to-br from-slate-100 to-slate-200",
+    "textColor": "text-slate-800"
+  },
   "sections": [
     {
-      "heading": "Effortless Accessibility, Real Compliance",
-      "body": "Experience the next generation of WCAG site scanning. Our platform automatically tests your website for hundreds of accessibility barriers—covering WCAG 2.0, 2.1, and 2.2 at every compliance level.\n\nGet instant, actionable reports with prioritized issues and developer-friendly visual guides. Deep dive with regression tracking, disability simulators, expert manual audits, and seamless workflow integrations.\n\nDesigned for teams, agencies, and global brands, our accessibility platform grows with your site—from single-page scans to enterprise-wide monitoring."
+      "id": "why-wcag-matters",
+      "heading": "Why WCAG Compliance Matters Now",
+      "layout": "two-column",
+      "variant": "background-light",
+      "content": [
+        {
+          "column": "left",
+          "body": "Recent changes in accessibility laws now require organizations nationwide to ensure their websites meet WCAG standards. Non-compliance can result in lawsuits, steep fines, and damage to your brand reputation. Organizations across industries—from retail to healthcare to education—must ensure their digital properties are accessible to all users.\n\nThe Americans with Disabilities Act (ADA) applies to websites, and enforcement actions are increasing rapidly. Don't wait until you receive a demand letter or face legal action."
+        },
+        {
+          "column": "right", 
+          "body": "Legal penalties for non-compliance have typically ranged from $5,000 to $75,000, with some cases reaching six figures. Beyond monetary penalties, organizations face reputational damage, lost customers, and reduced market reach.\n\nWCAG Scanner helps you avoid these risks by providing continuous monitoring and instant alerts when compliance issues emerge, ensuring you stay ahead of regulations."
+        }
+      ]
     },
     {
-      "heading": "Core Features",
-      "body": "**Developer-Friendly Testing**\n• Visual issue highlighting with precise code location markers\n• Multiple solution options for each identified violation\n• Copy-paste code snippets for quick fixes\n• Integration with popular IDEs and development tools\n\n**Comprehensive WCAG Coverage**\n• Automated auditing for WCAG 2.0, 2.1, and 2.2 guidelines\n• Complete coverage of Levels A, AA, and AAA compliance\n• Section 508 and international accessibility standards\n• Regular updates for emerging accessibility requirements\n\n**Multi-Level Analysis**\n• Component-level testing for granular issue identification\n• Page-level testing for holistic user experience assessment\n• Site-wide scanning for enterprise applications\n• Custom testing scenarios and user journey analysis"
+      "id": "proactive-monitoring",
+      "heading": "24/7 Proactive Monitoring",
+      "layout": "single-column-centered",
+      "variant": "background-primary",
+      "body": "WCAG Scanner automatically monitors your site 24/7, detecting new violations the moment they appear. When your development team pushes updates or your content editors publish new pages, our platform immediately rescans affected areas and alerts you to any compliance issues before they become legal problems.\n\nThis proactive approach means you'll never be surprised by accessibility violations. You'll receive prioritized notifications with clear remediation guidance, helping your team fix issues quickly and maintain uninterrupted compliance across your entire digital presence.",
+      "className": "text-white bg-slate-700"
     },
     {
-      "heading": "Advanced Testing Capabilities",
-      "body": "**Color Contrast & Visual Analysis**\n• Comprehensive color contrast checks with real-time validation\n• On-page color selection tools for designers\n• Pass/fail reporting with improvement suggestions\n• Support for dynamic content and hover states\n\n**Content & Media Validation**\n• Alt text verification for all images and media\n• Missing or incorrect description identification\n• Video caption and transcript analysis\n• Icon and decorative image classification\n\n**Navigation & Interaction Testing**\n• Keyboard navigation flow analysis\n• Focus order verification and optimization suggestions\n• Tab trap detection and resolution guidance\n• Touch target size and spacing validation\n\n**Form Accessibility**\n• Label association verification for all form elements\n• Error message accessibility and clarity testing\n• Field validation and user guidance assessment\n• Screen reader compatibility for complex forms"
+      "id": "how-it-works",
+      "heading": "How It Works",
+      "layout": "three-column-steps",
+      "variant": "numbered-steps",
+      "steps": [
+        {
+          "number": "01",
+          "title": "Enter Your URL",
+          "description": "Simply input your website address and select your desired compliance level—WCAG 2.0, 2.1, or 2.2 at Levels A, AA, or AAA."
+        },
+        {
+          "number": "02", 
+          "title": "Automated Scanning",
+          "description": "Our platform crawls your site, testing hundreds of accessibility criteria across every page, component, and user interaction."
+        },
+        {
+          "number": "03",
+          "title": "Instant Results", 
+          "description": "Receive a comprehensive report within minutes, highlighting issues with visual markers, code locations, and priority rankings."
+        }
+      ]
     },
     {
-      "heading": "Enterprise Features",
-      "body": "**Regression Tracking & Monitoring**\n• Baseline establishment for accessibility debt tracking\n• New violation detection with priority ranking\n• Historical trend analysis and improvement metrics\n• Team progress tracking and accountability tools\n\n**Workflow Integration**\n• CI/CD pipeline integration for automated testing\n• CMS plugins for content editors and publishers\n• Browser extensions for quick accessibility checks\n• API access for custom workflow implementations\n\n**Reporting & Collaboration**\n• Interactive reports with filtering and search capabilities\n• Export options (PDF, CSV, JSON) for stakeholder sharing\n• Team collaboration tools with issue assignment\n• Custom branding for client-facing reports\n\n**Professional Services**\n• Expert manual audit services for comprehensive compliance\n• Partner network access for specialized remediation\n• Training and consultation for accessibility best practices\n• Regular scheduled scanning for continuous monitoring"
+      "id": "wcag-coverage",
+      "heading": "Comprehensive WCAG Coverage",
+      "layout": "three-column-cards",
+      "variant": "feature-cards",
+      "backgroundColor": "bg-green-600",
+      "textColor": "text-white",
+      "cards": [
+        {
+          "title": "WCAG 2.0 Essentials",
+          "description": "Complete testing against the foundational principles of perceivable, operable, understandable, and robust web content.",
+          "features": [
+            "Essential accessibility criteria",
+            "Backward compatibility testing", 
+            "Legacy system support"
+          ],
+          "cardStyle": "bg-white text-green-900"
+        },
+        {
+          "title": "WCAG 2.1 Enhanced",
+          "description": "Extended coverage for mobile accessibility, low vision users, and cognitive disabilities introduced in 2018 standards.",
+          "features": [
+            "Touch target sizing",
+            "Orientation testing",
+            "Enhanced input modalities"
+          ],
+          "cardStyle": "bg-green-100 text-green-900"
+        },
+        {
+          "title": "WCAG 2.2 Latest",
+          "description": "The newest requirements including focus appearance, dragging interactions, and accessible authentication methods.",
+          "features": [
+            "Focus visible improvements",
+            "Consistent help mechanisms", 
+            "Redundant entry prevention"
+          ],
+          "cardStyle": "bg-green-200 text-green-900"
+        }
+      ]
     },
     {
-      "heading": "Standards Compliance",
-      "body": "**Supported Standards**\n• Web Content Accessibility Guidelines (WCAG) 2.0, 2.1, 2.2\n• Americans with Disabilities Act (ADA) compliance\n• Section 508 federal accessibility requirements\n• European Accessibility Act (EAA) standards\n• EN 301 549 technical specifications\n\n**Compliance Levels**\n• Level A: Basic accessibility features\n• Level AA: Standard compliance for most organizations\n• Level AAA: Enhanced accessibility for specialized needs\n• Custom compliance profiles for specific industry requirements"
+      "id": "compliance-levels",
+      "heading": "Compliance Levels Explained",
+      "layout": "three-column-comparison",
+      "variant": "comparison-table",
+      "levels": [
+        {
+          "level": "A",
+          "title": "Level A",
+          "description": "The minimum level of conformance, addressing the most critical barriers that prevent access to web content. Essential for all websites.",
+          "features": [
+            "Text alternatives for images",
+            "Keyboard accessibility",
+            "Sufficient color contrast", 
+            "Clear page structure"
+          ],
+          "cardStyle": "border-l-4 border-blue-500"
+        },
+        {
+          "level": "AA", 
+          "title": "Level AA",
+          "description": "The recommended level for most organizations and the requirement under ADA. Addresses major accessibility barriers.",
+          "features": [
+            "Enhanced contrast ratios",
+            "Resizable text up to 200%",
+            "Multiple navigation methods",
+            "Error identification and suggestions"
+          ],
+          "cardStyle": "border-l-4 border-green-500"
+        },
+        {
+          "level": "AAA",
+          "title": "Level AAA", 
+          "description": "The highest level of conformance, ideal for specialized applications or organizations prioritizing accessibility leadership.",
+          "features": [
+            "Sign language interpretation",
+            "Extended audio descriptions",
+            "Highest contrast requirements",
+            "Reading level considerations"
+          ],
+          "cardStyle": "border-l-4 border-purple-500"
+        }
+      ]
+    },
+    {
+      "id": "developer-tools",
+      "heading": "Developer-Friendly Testing Tools",
+      "layout": "feature-grid",
+      "variant": "tool-showcase",
+      "body": "Built specifically for development teams, our platform provides actionable insights and seamless workflow integration.",
+      "features": [
+        {
+          "icon": "code",
+          "title": "Visual Issue Highlighting",
+          "description": "Precise code location markers with visual overlays showing exactly where accessibility issues occur on your pages."
+        },
+        {
+          "icon": "lightbulb",
+          "title": "Multiple Solution Options", 
+          "description": "Each violation includes several remediation approaches ranked by effectiveness and implementation complexity."
+        },
+        {
+          "icon": "copy",
+          "title": "Copy-Paste Code Snippets",
+          "description": "Ready-to-use code examples and snippets for quick fixes, compatible with popular frameworks and libraries."
+        },
+        {
+          "icon": "integration",
+          "title": "IDE & Workflow Integration",
+          "description": "Extensions for VS Code, GitHub Actions, Jest plugins, and CI/CD pipeline integration for automated testing."
+        },
+        {
+          "icon": "trending-up",
+          "title": "Regression Tracking",
+          "description": "Baseline establishment and historical tracking to prevent accessibility debt and monitor team progress."
+        },
+        {
+          "icon": "team",
+          "title": "Team Collaboration",
+          "description": "Issue assignment, progress tracking, and team accountability tools for managing accessibility at scale."
+        }
+      ]
     }
   ],
+  "componentMeta": {
+    "framework": "tailwind-daisyui",
+    "responsive": true,
+    "darkMode": false,
+    "animations": "minimal"
+  },
+  "styleGuide": {
+    "primaryColors": ["green-600", "green-700", "green-800"],
+    "accentColors": ["blue-500", "purple-500", "slate-700"],
+    "backgroundVariants": {
+      "light": "bg-slate-50",
+      "primary": "bg-green-600 text-white",
+      "dark": "bg-slate-800 text-white"
+    },
+    "spacing": "standard",
+    "borderRadius": "rounded-lg",
+    "shadows": "shadow-lg"
+  },
   "tags": [
     "accessibility",
     "wcag",
@@ -49,17 +227,17 @@
   ],
   "license": "Commercial",
   "created": "2023-02-15",
-  "updated": "2025-10-05",
+  "updated": "2025-10-12",
   "stats": {
     "supported_guidelines": "WCAG 2.0/2.1/2.2",
-    "compliance_levels": "A, AA, AAA",
+    "compliance_levels": "A, AA, AAA", 
     "test_categories": "12+",
     "integration_options": "8+"
   },
   "target_audience": [
     "Development Teams",
-    "QA Engineers", 
-    "Accessibility Specialists",
+    "QA Engineers",
+    "Accessibility Specialists", 
     "Digital Agencies",
     "Enterprise Organizations"
   ]
