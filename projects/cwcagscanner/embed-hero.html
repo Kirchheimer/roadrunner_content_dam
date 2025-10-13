@@ -55,9 +55,15 @@
                                     </button>
                                 ` : ''}
                                 ${hero.cta.secondary ? `
-                                    <button class="btn btn-outline btn-lg" data-cta="secondary">
-                                        ${escapeHtml(hero.cta.secondary)}
-                                    </button>
+                                    ${typeof hero.cta.secondary === 'string' ? `
+                                        <button class="btn btn-outline btn-lg" data-cta="secondary">
+                                            ${escapeHtml(hero.cta.secondary)}
+                                        </button>
+                                    ` : `
+                                        <a href="${escapeHtml(hero.cta.secondary.url)}" target="${escapeHtml(hero.cta.secondary.target)}" class="btn btn-outline btn-lg" data-cta="secondary">
+                                            ${escapeHtml(hero.cta.secondary.text)}
+                                        </a>
+                                    `}
                                 ` : ''}
                             </div>
                         </div>

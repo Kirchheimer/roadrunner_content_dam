@@ -469,9 +469,15 @@
                                 </button>
                             ` : ''}
                             ${section.cta.secondary ? `
-                                <button class="btn btn-outline btn-lg" data-cta="secondary">
-                                    ${escapeHtml(section.cta.secondary)}
-                                </button>
+                                ${typeof section.cta.secondary === 'string' ? `
+                                    <button class="btn btn-outline btn-lg" data-cta="secondary">
+                                        ${escapeHtml(section.cta.secondary)}
+                                    </button>
+                                ` : `
+                                    <a href="${escapeHtml(section.cta.secondary.url)}" target="${escapeHtml(section.cta.secondary.target)}" class="btn btn-outline btn-lg" data-cta="secondary">
+                                        ${escapeHtml(section.cta.secondary.text)}
+                                    </a>
+                                `}
                             ` : ''}
                         </div>
                     </div>
