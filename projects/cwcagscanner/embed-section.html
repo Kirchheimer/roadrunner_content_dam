@@ -66,6 +66,18 @@
                 case 'feature-grid':
                     renderFeatureGridSection(section);
                     break;
+                case 'timeline-steps':
+                    renderTimelineSection(section);
+                    break;
+                case 'three-column-features':
+                    renderThreeColumnFeaturesSection(section);
+                    break;
+                case 'faq-grid':
+                    renderFAQSection(section);
+                    break;
+                case 'stats-and-cta':
+                    renderStatsAndCTASection(section);
+                    break;
                 default:
                     renderDefaultSection(section);
             }
@@ -304,6 +316,169 @@
             `;
         }
 
+        function renderTimelineSection(section) {
+            const contentDiv = document.getElementById('project-content');
+            
+            const stepsHtml = section.steps.map((step, index) => `
+                <div class="timeline-item">
+                    <div class="timeline-start">
+                        <div class="badge badge-primary badge-lg font-bold">
+                            ${escapeHtml(step.number)}
+                        </div>
+                    </div>
+                    <div class="timeline-middle">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-primary">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.236 4.53L8.53 10.53a.75.75 0 00-1.06 1.061l2.036 2.036a.75.75 0 001.137-.089l3.857-5.4z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <div class="timeline-end timeline-box">
+                        <h3 class="font-bold text-lg mb-2">${escapeHtml(step.title)}</h3>
+                        <p class="text-sm">${escapeHtml(step.description)}</p>
+                    </div>
+                    <hr class="bg-primary"/>
+                </div>
+            `).join('');
+            
+            contentDiv.innerHTML = `
+                <div class="py-8">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl md:text-4xl font-bold text-base-content mb-4">
+                            ${escapeHtml(section.heading)}
+                        </h2>
+                        ${section.body ? `
+                            <p class="text-lg text-base-content/70 max-w-3xl mx-auto mt-8">
+                                ${escapeHtml(section.body)}
+                            </p>
+                        ` : ''}
+                    </div>
+                    <div class="max-w-4xl mx-auto">
+                        <ul class="timeline timeline-vertical">
+                            ${stepsHtml}
+                        </ul>
+                    </div>
+                </div>
+            `;
+        }
+
+        function renderThreeColumnFeaturesSection(section) {
+            const contentDiv = document.getElementById('project-content');
+            
+            const featuresHtml = section.features.map(feature => `
+                <div class="card bg-base-100 shadow-lg">
+                    <div class="card-body text-center">
+                        <div class="text-4xl mb-4">${getIconSvg(feature.icon)}</div>
+                        <h3 class="card-title text-xl mb-4 justify-center">
+                            ${escapeHtml(feature.title)}
+                        </h3>
+                        <p class="text-base-content/70">
+                            ${escapeHtml(feature.description)}
+                        </p>
+                    </div>
+                </div>
+            `).join('');
+            
+            contentDiv.innerHTML = `
+                <div class="py-8">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl md:text-4xl font-bold text-base-content mb-4">
+                            ${escapeHtml(section.heading)}
+                        </h2>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                        ${featuresHtml}
+                    </div>
+                </div>
+            `;
+        }
+
+        function renderFAQSection(section) {
+            const contentDiv = document.getElementById('project-content');
+            
+            const questionsHtml = section.questions.map((faq, index) => `
+                <div class="collapse collapse-plus bg-base-100 shadow-lg">
+                    <input type="radio" name="faq-accordion" ${index === 0 ? 'checked' : ''} />
+                    <div class="collapse-title text-xl font-medium">
+                        ${escapeHtml(faq.question)}
+                    </div>
+                    <div class="collapse-content">
+                        <p class="whitespace-pre-line leading-relaxed">
+                            ${escapeHtml(faq.answer)}
+                        </p>
+                    </div>
+                </div>
+            `).join('');
+            
+            contentDiv.innerHTML = `
+                <div class="py-8">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl md:text-4xl font-bold text-base-content mb-4">
+                            ${escapeHtml(section.heading)}
+                        </h2>
+                    </div>
+                    <div class="max-w-4xl mx-auto space-y-4">
+                        ${questionsHtml}
+                    </div>
+                </div>
+            `;
+        }
+
+        function renderStatsAndCTASection(section) {
+            const contentDiv = document.getElementById('project-content');
+            
+            const statsHtml = section.stats.map(stat => `
+                <div class="stat text-center">
+                    <div class="stat-value text-primary text-4xl font-bold">
+                        ${escapeHtml(stat.number)}
+                    </div>
+                    <div class="stat-title text-lg font-semibold">
+                        ${escapeHtml(stat.title)}
+                    </div>
+                    <div class="stat-desc text-sm">
+                        ${escapeHtml(stat.description)}
+                    </div>
+                </div>
+            `).join('');
+            
+            contentDiv.innerHTML = `
+                <div class="py-8">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl md:text-4xl font-bold text-base-content mb-4">
+                            ${escapeHtml(section.heading)}
+                        </h2>
+                    </div>
+                    
+                    <div class="stats stats-vertical lg:stats-horizontal shadow max-w-4xl mx-auto mb-12">
+                        ${statsHtml}
+                    </div>
+                    
+                    <div class="divider max-w-4xl mx-auto"></div>
+                    
+                    <div class="text-center max-w-4xl mx-auto">
+                        <h3 class="text-2xl md:text-3xl font-bold mb-6">
+                            ${escapeHtml(section.cta.heading)}
+                        </h3>
+                        <div class="prose prose-lg max-w-none mb-8">
+                            <p class="whitespace-pre-line leading-relaxed">
+                                ${escapeHtml(section.cta.body)}
+                            </p>
+                        </div>
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                            <a href="${escapeHtml(section.cta.primary.url || '#')}" 
+                               target="${section.cta.primary.target || '_blank'}" 
+                               class="btn btn-primary btn-lg">
+                                ${escapeHtml(section.cta.primary.text || section.cta.primary)}
+                            </a>
+                            <a href="${escapeHtml(section.cta.secondary.url || '#')}" 
+                               target="${section.cta.secondary.target || '_blank'}" 
+                               class="btn btn-outline btn-lg">
+                                ${escapeHtml(section.cta.secondary.text || section.cta.secondary)}
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
         function getIconSvg(iconName) {
             const icons = {
                 'code': '{ }',
@@ -311,7 +486,19 @@
                 'copy': '📋',
                 'integration': '🔗',
                 'trending-up': '📈',
-                'team': '👥'
+                'team': '👥',
+                'report': '📊',
+                'export': '📤',
+                'image': '🖼️',
+                'video': '🎥',
+                'star': '⭐',
+                'component': '🧩',
+                'page': '📄',
+                'sitemap': '🗺️',
+                'usa-flag': '🇺🇸',
+                'government': '🏛️',
+                'europe': '🇪🇺',
+                'globe': '🌍'
             };
             return icons[iconName] || '•';
         }

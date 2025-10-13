@@ -10,8 +10,16 @@
     "title": "Effortless Accessibility Scanning for Your Website",
     "subtitle": "Stay compliant with upcoming US regulations. Scan your site for WCAG violations—free, fast, and continuously monitored.",
     "cta": {
-      "primary": "Start Free Scan",
-      "secondary": "View Demo"
+      "primary": {
+        "text": "Start Free Scan",
+        "url": "https://wcagscanner.com/scan",
+        "target": "_parent"
+      },
+      "secondary": {
+        "text": "View Demo", 
+        "url": "https://wcagscanner.com/templates/target_sample.html",
+        "target": "_parent"
+      }
     },
     "background": "gradient-to-br from-slate-100 to-slate-200",
     "textColor": "text-slate-800"
@@ -153,37 +161,325 @@
       "heading": "Developer-Friendly Testing Tools",
       "layout": "feature-grid",
       "variant": "tool-showcase",
-      "body": "Built specifically for development teams, our platform provides actionable insights and seamless workflow integration.",
       "features": [
         {
           "icon": "code",
           "title": "Visual Issue Highlighting",
-          "description": "Precise code location markers with visual overlays showing exactly where accessibility issues occur on your pages."
+          "description": "Every accessibility violation is visually marked directly on your page with color-coded indicators. Hover over any issue to see the precise element causing the problem, complete with DOM path and line numbers. Our visual overlay system makes it instantly clear where problems exist without digging through code."
         },
         {
           "icon": "lightbulb",
           "title": "Multiple Solution Options", 
-          "description": "Each violation includes several remediation approaches ranked by effectiveness and implementation complexity."
+          "description": "For each identified violation, we provide 2-3 different remediation approaches. Choose the solution that best fits your architecture—whether it's semantic HTML improvements, ARIA attributes, or JavaScript enhancements. Each option includes pros, cons, and implementation complexity ratings."
         },
         {
           "icon": "copy",
           "title": "Copy-Paste Code Snippets",
-          "description": "Ready-to-use code examples and snippets for quick fixes, compatible with popular frameworks and libraries."
+          "description": "No need to research solutions or write code from scratch. Our platform generates ready-to-use code snippets tailored to your specific violation. Simply copy the provided HTML, CSS, or JavaScript and paste it directly into your codebase. Includes framework-specific examples for React, Vue, and Angular."
         },
         {
           "icon": "integration",
-          "title": "IDE & Workflow Integration",
-          "description": "Extensions for VS Code, GitHub Actions, Jest plugins, and CI/CD pipeline integration for automated testing."
+          "title": "IDE Integration",
+          "description": "Connect WCAG Scanner directly to Visual Studio Code, WebStorm, or your preferred development environment. Get real-time accessibility feedback as you code, with inline warnings and auto-complete suggestions for accessible patterns. Catch issues before they reach production."
+        }
+      ]
+    },
+    {
+      "id": "multi-level-testing",
+      "heading": "Multi-Level Testing Approach",
+      "layout": "feature-grid",
+      "variant": "icon-features",
+      "body": "Each testing level provides unique insights. Component testing catches issues early in development. Page testing ensures holistic accessibility. Site-wide scanning maintains enterprise compliance. Use them individually or together for complete coverage.",
+      "features": [
+        {
+          "icon": "component",
+          "title": "Component-Level Testing",
+          "description": "Isolate and test individual UI components like buttons, forms, modals, and navigation menus. Perfect for design systems and component libraries, ensuring every reusable element meets accessibility standards before deployment across multiple pages."
         },
         {
-          "icon": "trending-up",
-          "title": "Regression Tracking",
-          "description": "Baseline establishment and historical tracking to prevent accessibility debt and monitor team progress."
+          "icon": "page",
+          "title": "Page-Level Testing",
+          "description": "Analyze complete page experiences including layout structure, heading hierarchy, landmark regions, and content flow. Validates that all components work together cohesively to create an accessible user journey from top to bottom."
+        },
+        {
+          "icon": "sitemap",
+          "title": "Site-Wide Scanning",
+          "description": "Comprehensive crawling of your entire website, automatically discovering pages through internal links. Generates a complete accessibility inventory showing which pages pass, which fail, and where your highest-priority issues exist across thousands of pages."
+        }
+      ]
+    },
+    {
+      "id": "color-analysis",
+      "heading": "Color Contrast & Visual Analysis",
+      "layout": "two-column",
+      "variant": "text-and-image",
+      "content": [
+        {
+          "column": "left",
+          "heading": "Comprehensive Color Validation",
+          "body": "Color contrast issues are among the most common accessibility violations. WCAG requires minimum contrast ratios of 4.5:1 for normal text and 3:1 for large text at Level AA. Our platform automatically tests every text element against its background, including overlays, gradients, and semi-transparent layers.\n\nThe on-page color picker tool lets designers test color combinations in real-time. Click any element to see its current contrast ratio, then adjust colors until they meet requirements. The tool suggests the closest compliant alternatives, preserving your design aesthetic while ensuring readability for users with low vision or color blindness.\n\nDynamic content poses unique challenges—hover states, active buttons, and JavaScript-rendered elements. WCAG Scanner captures these interactions, testing contrast across all possible states to ensure consistent accessibility throughout the user experience."
+        }
+      ]
+    },
+    {
+      "id": "content-media-validation",
+      "heading": "Content & Media Validation",
+      "layout": "three-column-features",
+      "variant": "icon-grid",
+      "features": [
+        {
+          "icon": "image",
+          "title": "Alt Text Verification",
+          "description": "Every image must have appropriate alternative text for screen reader users. Our AI-powered system doesn't just check if alt text exists—it evaluates whether the description is meaningful, contextual, and sufficient for understanding. Flags generic phrases like \"image\" or \"photo\" that provide no value."
+        },
+        {
+          "icon": "video",
+          "title": "Video Captions & Transcripts",
+          "description": "Multimedia content requires synchronized captions for deaf and hard-of-hearing users, plus full transcripts for users who cannot access audio or video at all. We scan video players to verify caption availability, accuracy, and proper synchronization with audio content."
+        },
+        {
+          "icon": "star",
+          "title": "Icon Classification",
+          "description": "Icons serve different purposes—some convey meaning and require labels, while others are purely decorative. Our system distinguishes between functional and decorative icons, ensuring meaningful icons have appropriate accessible names while decorative ones are properly hidden from assistive technologies."
+        }
+      ]
+    },
+    {
+      "id": "navigation-testing",
+      "heading": "Navigation & Interaction Testing",
+      "layout": "feature-grid",
+      "variant": "outlined-cards",
+      "features": [
+        {
+          "title": "Keyboard Navigation Flow",
+          "description": "Many users navigate websites exclusively with keyboards due to motor disabilities or assistive technology use. Our platform maps your entire keyboard navigation flow, identifying unreachable elements, illogical tab orders, and missing focus indicators that make navigation confusing or impossible."
+        },
+        {
+          "title": "Focus Order Verification",
+          "description": "The order in which elements receive keyboard focus must follow a logical, predictable pattern—typically left-to-right, top-to-bottom. We analyze your tab sequence and flag any jumps or unexpected focus shifts that would disorient keyboard users, providing specific recommendations for correcting tab index values."
+        },
+        {
+          "title": "Tab Trap Detection",
+          "description": "Tab traps occur when keyboard focus becomes stuck within a component like a modal or dropdown, with no way to escape back to the main page. These create critical barriers for keyboard users. Our testing identifies all tab traps and provides escape mechanism implementations."
+        },
+        {
+          "title": "Touch Target Sizing",
+          "description": "Mobile and touchscreen users require adequately sized interactive elements—WCAG 2.2 specifies minimum 24×24 CSS pixel targets. We measure every button, link, and control, flagging undersized targets and recommending spacing adjustments to prevent mis-taps and user frustration."
+        }
+      ]
+    },
+    {
+      "id": "form-accessibility",
+      "heading": "Form Accessibility Excellence",
+      "layout": "two-column",
+      "variant": "feature-comparison",
+      "content": [
+        {
+          "column": "left",
+          "heading": "Complete Form Validation",
+          "body": "Forms are critical conversion points, yet they're often the most inaccessible parts of websites. Every form field requires a properly associated label that screen readers can announce. Our system verifies programmatic label associations, checking for explicit elements, ARIA labels, and placeholder text misuse.\n\nError messages must be accessible, clear, and actionable. We test whether errors are programmatically associated with their fields, announced to screen readers, and provide specific guidance for correction rather than vague warnings. Color alone cannot indicate errors—we verify that text indicators or icons accompany any color-based signaling."
+        },
+        {
+          "column": "right",
+          "heading": "Field Validation Testing",
+          "body": "Input validation helps all users, but accessibility requires that validation be communicated effectively. We test whether required fields are properly marked, whether format requirements are clearly explained before submission, and whether real-time validation provides helpful feedback without being disruptive to screen reader users.\n\nComplex forms with conditional fields, multi-step wizards, or dynamic content require special attention. Our testing ensures that changes triggered by user input are announced appropriately and that all form states remain accessible throughout the interaction flow."
+        }
+      ]
+    },
+    {
+      "id": "regression-tracking",
+      "heading": "Regression Tracking & Monitoring",
+      "layout": "timeline-steps",
+      "variant": "numbered-timeline",
+      "steps": [
+        {
+          "number": "1",
+          "title": "Baseline Establishment",
+          "description": "Your first scan creates an accessibility baseline—a complete inventory of current issues across your site. This establishes your starting point for improvement tracking and helps prioritize remediation efforts."
+        },
+        {
+          "number": "2",
+          "title": "New Violation Detection",
+          "description": "Subsequent scans compare against your baseline, highlighting newly introduced violations. Get instant alerts when updates break previously compliant pages, allowing immediate rollback or fixes."
+        },
+        {
+          "number": "3",
+          "title": "Trend Analysis",
+          "description": "Track accessibility improvements over time with comprehensive metrics. Visualize issue resolution rates, compliance percentages, and team progress toward full WCAG conformance goals."
+        },
+        {
+          "number": "4",
+          "title": "Continuous Monitoring",
+          "description": "Scheduled automated scans run daily, weekly, or monthly based on your needs. Never worry about compliance slipping—you'll be notified immediately when issues emerge."
+        }
+      ],
+      "body": "Regression tracking shows tangible progress toward compliance goals, helping justify accessibility investments and demonstrate due diligence to stakeholders and legal teams."
+    },
+    {
+      "id": "workflow-integration",
+      "heading": "Seamless Workflow Integration",
+      "layout": "feature-grid",
+      "variant": "image-features",
+      "features": [
+        {
+          "title": "CI/CD Pipeline Integration",
+          "description": "Embed accessibility testing directly into your continuous integration and deployment workflows. Automatically scan every pull request and block deployments that introduce critical violations, ensuring accessibility never regresses in production."
+        },
+        {
+          "title": "CMS Plugins",
+          "description": "Native plugins for WordPress, Drupal, and other major content management systems let editors check accessibility before publishing. Real-time feedback helps content creators maintain compliance without technical expertise."
+        },
+        {
+          "title": "Browser Extensions",
+          "description": "Quick-scan browser extensions for Chrome, Firefox, and Edge provide instant accessibility checks while you browse. Perfect for QA testing, client reviews, or ad-hoc validation during development."
+        },
+        {
+          "title": "Comprehensive API",
+          "description": "Full REST API access enables custom integrations with your existing tools and workflows. Build automated reporting, integrate with project management systems, or create custom dashboards that fit your team's unique needs."
+        }
+      ]
+    },
+    {
+      "id": "reporting-collaboration",
+      "heading": "Powerful Reporting & Collaboration",
+      "layout": "three-column-features",
+      "variant": "icon-cards",
+      "body": "Reports automatically update as issues are resolved, providing a living document of your accessibility journey. Historical archives let you demonstrate compliance efforts and track long-term improvements for audit purposes.",
+      "features": [
+        {
+          "icon": "report",
+          "title": "Interactive Reports",
+          "description": "Navigate scan results with powerful filtering, sorting, and search capabilities. Group issues by severity, WCAG criterion, page location, or component type. Drill down from high-level summaries to specific code locations in seconds."
+        },
+        {
+          "icon": "export",
+          "title": "Multiple Export Formats",
+          "description": "Share results with stakeholders in their preferred format—PDF reports for executives, CSV files for bulk analysis, or JSON for custom processing. Add custom branding and executive summaries for client-facing deliverables."
         },
         {
           "icon": "team",
           "title": "Team Collaboration",
-          "description": "Issue assignment, progress tracking, and team accountability tools for managing accessibility at scale."
+          "description": "Assign issues to specific team members with due dates and priorities. Track resolution status, add comments and screenshots, and collaborate on solutions. Get notifications when assigned issues require attention."
+        }
+      ]
+    },
+    {
+      "id": "professional-services",
+      "heading": "Professional Services & Support",
+      "layout": "two-column",
+      "variant": "service-cards",
+      "content": [
+        {
+          "column": "left",
+          "heading": "Expert Manual Audits",
+          "body": "Automated testing catches 70-80% of accessibility issues, but some barriers require human judgment. Our certified accessibility auditors conduct comprehensive manual reviews using assistive technologies, identifying issues that automated tools miss—like unclear labels, confusing navigation, or poor reading order.\n\nManual audits include testing with screen readers, keyboard-only navigation, voice control software, and screen magnification tools. You'll receive a detailed report with videos showing exactly how users with disabilities experience your site, plus prioritized recommendations for improvement."
+        },
+        {
+          "column": "right",
+          "heading": "Remediation Partner Network",
+          "body": "Don't have in-house accessibility expertise? Our vetted partner network includes specialized development agencies, UX consultants, and accessibility experts who can fix issues for you. We'll match you with partners experienced in your platform, industry, and compliance requirements.\n\nPartners work directly from WCAG Scanner reports, ensuring efficient remediation without duplication of testing efforts. Track their progress in real-time as issues move from identified to in-progress to resolved, maintaining full visibility throughout the engagement."
+        }
+      ]
+    },
+    {
+      "id": "global-standards",
+      "heading": "Global Standards Compliance",
+      "layout": "feature-grid",
+      "variant": "standards-cards",
+      "features": [
+        {
+          "icon": "usa-flag",
+          "title": "Americans with Disabilities Act (ADA)",
+          "description": "U.S. federal law prohibiting discrimination against individuals with disabilities. Courts have consistently ruled that websites are \"places of public accommodation\" covered by ADA Title III. Our platform ensures compliance with ADA requirements based on WCAG 2.1 Level AA, the widely accepted standard."
+        },
+        {
+          "icon": "government",
+          "title": "Section 508",
+          "description": "Federal regulation requiring U.S. government agencies and contractors to make their electronic and information technology accessible. Updated in 2017 to align with WCAG 2.0 Level AA. Essential for any organization doing business with federal entities."
+        },
+        {
+          "icon": "europe",
+          "title": "European Accessibility Act (EAA)",
+          "description": "EU directive requiring private sector products and services, including websites and mobile applications, to be accessible. Enforcement begins June 2025. Covers e-commerce, banking, transportation, and other consumer-facing industries operating in European markets."
+        },
+        {
+          "icon": "globe",
+          "title": "EN 301 549",
+          "description": "European technical standard for ICT accessibility, harmonized with WCAG 2.1. Required for public procurement in EU member states. Our testing verifies compliance with all applicable requirements, helping you meet European market access obligations."
+        }
+      ]
+    },
+    {
+      "id": "free-scan-cta",
+      "heading": "Start Your Free Scan Today",
+      "layout": "stats-and-cta",
+      "variant": "promotional",
+      "stats": [
+        {
+          "number": "100%",
+          "title": "Free to Start",
+          "description": "No credit card required for your first comprehensive scan"
+        },
+        {
+          "number": "5min",
+          "title": "Instant Results",
+          "description": "Complete reports delivered in minutes, not hours or days"
+        },
+        {
+          "number": "24/7",
+          "title": "Continuous Protection",
+          "description": "Round-the-clock monitoring keeps you compliant automatically"
+        },
+        {
+          "number": "500+",
+          "title": "Accessibility Tests",
+          "description": "Comprehensive coverage across all WCAG criteria and levels"
+        }
+      ],
+      "cta": {
+        "heading": "Ready to Protect Your Organization?",
+        "body": "Join thousands of organizations using WCAG Scanner to maintain compliance, avoid legal risk, and create accessible experiences for all users. Start with a free scan to see where you stand, then choose the plan that fits your needs—from single-site monitoring to enterprise-wide coverage.\n\nOur team is here to help you succeed. Get expert guidance on remediation priorities, compliance strategies, and accessibility best practices. Schedule a consultation or start scanning now.",
+        "primary": {
+          "text": "Start Free Scan",
+          "url": "https://wcagscanner.com/scan",
+          "target": "_parent"
+        },
+        "secondary": {
+          "text": "Schedule Demo",
+          "url": "https://wcagscanner.com/demo",
+          "target": "_parent"
+        }
+      }
+    },
+    {
+      "id": "faq",
+      "heading": "Frequently Asked Questions",
+      "layout": "faq-grid",
+      "variant": "outlined-questions",
+      "questions": [
+        {
+          "question": "Is the free scan really free?",
+          "answer": "Yes, absolutely. You can scan any website up to 10 pages completely free with no credit card required. You'll receive a full accessibility report showing all detected issues with detailed remediation guidance. This gives you a clear picture of your current compliance status before deciding on a paid plan."
+        },
+        {
+          "question": "How accurate is automated accessibility testing?",
+          "answer": "Automated testing reliably catches 70-80% of WCAG violations, including all issues that can be detected programmatically—missing alt text, insufficient color contrast, keyboard accessibility problems, and more. For complete assurance, we recommend combining automated scans with our expert manual audit services, which identify issues requiring human judgment."
+        },
+        {
+          "question": "What happens if my site goes out of compliance after I fix everything?",
+          "answer": "That's exactly why we built continuous monitoring. Your site changes constantly—new content, design updates, third-party integrations. Our platform automatically rescans your site on your chosen schedule (daily, weekly, or monthly) and immediately alerts you to any new violations, so you can fix them before they become legal problems."
+        },
+        {
+          "question": "Do you support non-English websites?",
+          "answer": "Yes. WCAG Scanner tests websites in any language. Accessibility requirements are largely language-independent—color contrast, keyboard navigation, alt text presence, and structural elements all function the same way regardless of content language. Our reports can be generated in multiple languages for international teams."
+        },
+        {
+          "question": "Can I use this for client websites if I'm an agency?",
+          "answer": "Absolutely. Our agency plans include white-label reporting, bulk scanning capabilities, and client management features. Scan multiple client sites from a single dashboard, generate branded reports, and offer accessibility monitoring as a value-added service. Many agencies use WCAG Scanner as a core part of their service offerings."
+        },
+        {
+          "question": "What level of WCAG compliance do I need?",
+          "answer": "Most organizations should target WCAG 2.1 Level AA, which is the standard referenced in ADA cases and federal regulations. This provides strong accessibility for users with disabilities while remaining achievable for most websites. Level AAA is optional and recommended only for specialized applications. We'll help you determine the right compliance level for your specific situation."
         }
       ]
     }
