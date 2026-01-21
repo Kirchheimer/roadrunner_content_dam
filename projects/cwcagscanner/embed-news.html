@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="bumblebee">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CWCAGScanner - Recent Events & News</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body class="bg-transparent p-4">
+    <div id="news-content">
+        <div class="flex justify-center p-10">
+            <span class="loading loading-spinner loading-lg text-primary"></span>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            loadNewsContent();
+        });
+
+        async function loadNewsContent() {
+            try {
+                const response = await fetch('./feeds/news.json');
+                const news = await response.json();
+
+                if (Array.isArray(news) && news.length > 0) {
+                    renderNewsItems(news);
+                } else {
+                    showError('No recent news or events found.');
+                }
+
+            } catch (error) {
+                console.error('Error loading news content:', error);
+                showError('Error loading events. Please check the news.json file.');
+            }
+        }
+
+        function renderNewsItems(items) {
+            const contentDiv = document.getElementById('news-content');
+
+            const itemsHtml = items.map(item => `
+                <div class="card bg-base-100 shadow-sm border border-base-200 mb-6 overflow-hidden hover:shadow-md transition-shadow">
+                    <div class="card-body p-6">
+                        <div class="flex flex-wrap justify-between items-start gap-2 mb-2">
+                            <div class="badge badge-primary badge-outline uppercase text-xs font-bold tracking-wider">
+                                ${escapeHtml(item.category || 'Event')}
+                            </div>
+                            <div class="text-sm text-base-content/60 italic">
+                                <i class="far fa-calendar-alt mr-1"></i>
+                                ${escapeHtml(item.date)}
+                            </div>
+                        </div>
+                        
+                        <h2 class="card-title text-xl font-bold text-base-content mb-3 leading-tight">
+                            ${escapeHtml(item.title)}
+                        </h2>
+                        
+                        <p class="text-base-content/80 mb-4 line-clamp-3">
+                            ${escapeHtml(item.summary)}
+                        </p>
+
+                        <div class="flex flex-wrap gap-1 mb-4">
+                            ${(item.tags || []).map(tag => `
+                                <span class="badge badge-ghost badge-sm text-xs">#${escapeHtml(tag)}</span>
+                            `).join('')}
+                        </div>
+                        
+                        <div class="card-actions justify-end mt-2 pt-4 border-t border-base-100">
+                            ${item.url ? `
+                                <a href="${escapeHtml(item.url)}" target="_blank" class="btn btn-primary btn-sm">
+                                    Learn More <i class="fas fa-external-link-alt ml-1 text-[10px]"></i>
+                                </a>
+                            ` : ''}
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+
+            contentDiv.innerHTML = `
+                <div class="max-w-4xl mx-auto">
+                    ${itemsHtml}
+                </div>
+            `;
+        }
+
+        function showError(message) {
+            const contentDiv = document.getElementById('news-content');
+            contentDiv.innerHTML = `
+                <div class="alert alert-error max-w-lg mx-auto shadow-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <span>${message}</span>
+                </div>
+            `;
+        }
+
+        function escapeHtml(text) {
+            if (typeof text !== 'string') return text;
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+    </script>
+</body>
+
+</html>

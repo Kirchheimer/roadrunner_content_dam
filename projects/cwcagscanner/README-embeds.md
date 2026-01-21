@@ -53,14 +53,16 @@ This document explains how to use the modular embed system for the CWCAGScanner 
         width="100%" height="700" frameborder="0"></iframe>
 ```
 
-### 5. All Content (Original)
-**File:** `embed.html`
-**Content:** Displays all sections sequentially (original behavior).
+### 5. Recent News & Events
+**File:** `embed-news.html`
+**Content:** Displays the latest news, releases, and upcoming events from `feeds/news.json`.
 **Usage:**
 ```html
-<iframe src="https://kirchheimer.github.io/roadrunner_content_dam/projects/cwcagscanner/embed.html" 
-        width="100%" height="800" frameborder="0"></iframe>
+<iframe src="https://kirchheimer.github.io/roadrunner_content_dam/projects/cwcagscanner/embed-news.html" 
+        width="100%" height="600" frameborder="0"></iframe>
 ```
+
+### 6. All Content (Original)
 
 ## Available Section IDs
 
@@ -72,6 +74,18 @@ For use with `embed-section.html?section=SECTION_ID`:
 - `wcag-coverage` - Three cards showing WCAG 2.0, 2.1, and 2.2 features
 - `compliance-levels` - Three-column comparison of A, AA, and AAA levels
 - `developer-tools` - Feature grid showing developer-focused tools
+- `multi-level-testing` - Three-column feature grid for component, page, and site testing
+- `color-analysis` - Two-column layout for comprehensive color validation
+- `content-media-validation` - Three-column features for alt text, videos, and icons
+- `navigation-testing` - Feature grid for keyboard navigation and interaction testing
+- `form-accessibility` - Two-column comparison of form validation features
+- `regression-tracking` - Timeline showing 4-step monitoring process
+- `workflow-integration` - Feature grid for CI/CD, CMS plugins, and API integration
+- `reporting-collaboration` - Three-column features for reports, exports, and team collaboration
+- `professional-services` - Two-column layout for expert audits and partner network
+- `global-standards` - Feature grid showing ADA, Section 508, EAA, and EN 301 549
+- `free-scan-cta` - Stats display with call-to-action section
+- `faq` - Accordion-style frequently asked questions
 
 ## DaisyUI Theme Integration
 
