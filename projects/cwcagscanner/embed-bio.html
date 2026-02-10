@@ -45,7 +45,7 @@
             const itemsHtml = items.map(item => `
                 <div class="card bg-base-100 shadow-sm border border-base-200 overflow-hidden hover:shadow-md transition-shadow">
                     <div class="card-body p-6">
-                        <div class="flex flex-col md:flex-row gap-6">
+                        <div class="flex flex-col sm:flex-row lg:flex-col xl:flex-row gap-6">
                             <div class="flex-shrink-0">
                                 <div class="avatar">
                                     <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-primary/20">
@@ -107,8 +107,8 @@
             `).join('');
 
             contentDiv.innerHTML = `
-                <div class="max-w-7xl mx-auto">
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="w-full">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                         ${itemsHtml}
                     </div>
                 </div>
