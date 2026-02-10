@@ -43,7 +43,7 @@
             const contentDiv = document.getElementById('bio-content');
 
             const itemsHtml = items.map(item => `
-                <div class="card bg-base-100 shadow-sm border border-base-200 mb-8 overflow-hidden hover:shadow-md transition-shadow">
+                <div class="card bg-base-100 shadow-sm border border-base-200 overflow-hidden hover:shadow-md transition-shadow">
                     <div class="card-body p-6">
                         <div class="flex flex-col md:flex-row gap-6">
                             <div class="flex-shrink-0">
@@ -107,12 +107,14 @@
             `).join('');
 
             contentDiv.innerHTML = `
-                <div class="max-w-4xl mx-auto">
-                    <div class="text-center mb-8">
-                        <h1 class="text-3xl font-bold text-base-content mb-2">Meet Our Team</h1>
-                        <p class="text-base-content/70">The experts behind WCAGscanner</p>
+                <div class="max-w-7xl mx-auto">
+                    <div class="text-center mb-12">
+                        <h1 class="text-4xl font-extrabold text-base-content mb-3">Meet Our Team</h1>
+                        <p class="text-lg text-base-content/70">The accessibility experts and technical leaders behind WCAGscanner</p>
                     </div>
-                    ${itemsHtml}
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        ${itemsHtml}
+                    </div>
                 </div>
             `;
         }
