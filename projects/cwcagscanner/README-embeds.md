@@ -62,7 +62,16 @@ This document explains how to use the modular embed system for the CWCAGScanner 
         width="100%" height="600" frameborder="0"></iframe>
 ```
 
-### 6. All Content (Original)
+### 6. Team Bios
+**File:** `embed-bio.html`
+**Content:** Displays the team member profiles from `feeds/bio.json`.
+**Usage:**
+```html
+<iframe src="https://kirchheimer.github.io/roadrunner_content_dam/projects/cwcagscanner/embed-bio.html" 
+        width="100%" height="800" frameborder="0"></iframe>
+```
+
+### 7. All Content (Original)
 
 ## Available Section IDs
 

@@ -1,16 +1,17 @@
 {
-  "last_updated": "2025-10-05",
-  "generated_at": "2025-10-05T21:44:15.448Z",
+  "last_updated": "2026-02-10",
+  "generated_at": "2026-02-10T04:02:25.019Z",
   "total_projects": 3,
   "projects": [
     {
       "id": "cwcagscanner",
-      "title": "CWCAGScanner - Advanced Accessibility Testing Platform",
+      "title": "CWCAGScanner - Effortless Accessibility Scanning",
       "path": "projects/cwcagscanner/",
       "feeds": [
+        "bio.json",
         "news.json"
       ],
-      "description": "Effortless accessibility compliance with automated WCAG scanning. Get instant, actionable reports covering WCAG 2.0, 2.1, and 2.2 at all compliance levels with developer-friendly visual guides.",
+      "description": "Stay compliant with upcoming US regulations. Scan your site for WCAG violations—free, fast, and continuously monitored.",
       "version": "2.4.1",
       "status": "active-development",
       "tags": [

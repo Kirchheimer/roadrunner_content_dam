@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +14,7 @@
             padding: 40px 0;
             text-align: center;
         }
+
         .project-meta {
             display: flex;
             justify-content: center;
@@ -20,25 +22,29 @@
             margin-top: 20px;
             flex-wrap: wrap;
         }
+
         .meta-item {
-            background: rgba(255,255,255,0.1);
+            background: rgba(255, 255, 255, 0.1);
             padding: 8px 16px;
             border-radius: 20px;
             font-size: 0.9rem;
         }
+
         .section-card {
             background: white;
             padding: 30px;
             margin: 20px 0;
             border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
+
         .tags {
             display: flex;
             gap: 8px;
             flex-wrap: wrap;
             margin: 20px 0;
         }
+
         .tag {
             background: #e0e7ff;
             color: #4338ca;
@@ -46,17 +52,20 @@
             border-radius: 12px;
             font-size: 0.8rem;
         }
+
         .maintainer {
             display: flex;
             align-items: center;
             gap: 10px;
             margin: 10px 0;
         }
+
         .maintainer i {
             color: #6b7280;
         }
     </style>
 </head>
+
 <body>
     <div class="project-header">
         <div class="container">
@@ -81,13 +90,16 @@
 
     <main class="container">
         <section class="project-links" style="margin: 40px 0; text-align: center;">
-            <a id="repo-link" href="#" style="display: inline-block; background: #4f46e5; color: white; padding: 12px 24px; border-radius: 8px; text-decoration: none; margin: 0 10px;">
+            <a id="repo-link" href="#"
+                style="display: inline-block; background: #4f46e5; color: white; padding: 12px 24px; border-radius: 8px; text-decoration: none; margin: 0 10px;">
                 <i class="fab fa-github"></i> Repository
             </a>
-            <a id="docs-link" href="#" style="display: inline-block; background: #059669; color: white; padding: 12px 24px; border-radius: 8px; text-decoration: none; margin: 0 10px;">
+            <a id="docs-link" href="#"
+                style="display: inline-block; background: #059669; color: white; padding: 12px 24px; border-radius: 8px; text-decoration: none; margin: 0 10px;">
                 <i class="fas fa-book"></i> Documentation
             </a>
-            <a href="content.json" style="display: inline-block; background: #6b7280; color: white; padding: 12px 24px; border-radius: 8px; text-decoration: none; margin: 0 10px;">
+            <a href="content.json"
+                style="display: inline-block; background: #6b7280; color: white; padding: 12px 24px; border-radius: 8px; text-decoration: none; margin: 0 10px;">
                 <i class="fas fa-file-code"></i> JSON Data
             </a>
         </section>
@@ -101,12 +113,20 @@
 
         <section style="margin-top: 40px;">
             <h2><i class="fas fa-rss"></i> Project Feeds</h2>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 20px;">
+            <div
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 20px;">
                 <div class="section-card">
                     <h3><i class="fas fa-newspaper"></i> News</h3>
                     <p>Latest announcements, releases, and major updates</p>
                     <a href="feeds/news.json" style="color: #4f46e5; text-decoration: none;">
                         <i class="fas fa-arrow-right"></i> View News Feed
+                    </a>
+                </div>
+                <div class="section-card">
+                    <h3><i class="fas fa-users"></i> Team Bios</h3>
+                    <p>Profiles and expertise of our team members</p>
+                    <a href="feeds/bio.json" style="color: #4f46e5; text-decoration: none;">
+                        <i class="fas fa-arrow-right"></i> View Bio Feed
                     </a>
                 </div>
                 <div class="section-card">
@@ -157,7 +177,7 @@ fetch('./feeds/news.json')
 
     <script>
         // Load project content dynamically
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             loadProjectContent();
         });
 
@@ -165,14 +185,14 @@ fetch('./feeds/news.json')
             try {
                 const response = await fetch('./content.json');
                 const project = await response.json();
-                
+
                 // Update header information
                 document.getElementById('project-title').textContent = project.title;
                 document.getElementById('project-description').textContent = project.description;
                 document.getElementById('project-version').textContent = project.version || 'N/A';
                 document.getElementById('project-status').textContent = project.status || 'Unknown';
                 document.getElementById('project-updated').textContent = project.updated || 'N/A';
-                
+
                 // Update links
                 if (project.repository) {
                     document.getElementById('repo-link').href = project.repository;
@@ -180,16 +200,16 @@ fetch('./feeds/news.json')
                 if (project.documentation) {
                     document.getElementById('docs-link').href = project.documentation;
                 }
-                
+
                 // Render content sections
                 renderProjectSections(project.sections || []);
-                
+
                 // Show tags
                 renderTags(project.tags || []);
-                
+
                 // Show maintainers
                 renderMaintainers(project.maintainers || []);
-                
+
             } catch (error) {
                 console.error('Error loading project content:', error);
                 document.getElementById('project-content').innerHTML = `
@@ -203,25 +223,37 @@ fetch('./feeds/news.json')
 
         function renderProjectSections(sections) {
             const contentDiv = document.getElementById('project-content');
-            
+
             if (sections.length === 0) {
                 contentDiv.innerHTML = '<p style="text-align: center; color: #6b7280;">No content sections available.</p>';
                 return;
             }
-            
-            const sectionsHtml = sections.map(section => `
-                <div class="section-card">
-                    <h2><i class="fas fa-info-circle"></i> ${escapeHtml(section.heading)}</h2>
-                    <div style="white-space: pre-line; line-height: 1.7;">${escapeHtml(section.body)}</div>
-                </div>
-            `).join('');
-            
+
+            const sectionsHtml = sections.map(section => {
+                let content = `<div style="white-space: pre-line; line-height: 1.7;">${escapeHtml(section.body || '')}</div>`;
+
+                if (section.layout === 'bio-section' && section.embedUrl) {
+                    content += `
+                        <div style="margin-top: 20px;">
+                            <iframe src="${section.embedUrl}" width="100%" height="600" frameborder="0" style="border-radius: 8px; border: 1px solid #e5e7eb;"></iframe>
+                        </div>
+                    `;
+                }
+
+                return `
+                    <div class="section-card" id="section-${section.id}" style="${section.backgroundColor ? 'background-color: transparent;' : ''}">
+                        <h2><i class="fas fa-info-circle"></i> ${escapeHtml(section.heading)}</h2>
+                        ${content}
+                    </div>
+                `;
+            }).join('');
+
             contentDiv.innerHTML = sectionsHtml;
         }
 
         function renderTags(tags) {
             if (tags.length === 0) return;
-            
+
             const tagsHtml = `
                 <section style="margin: 30px 0;">
                     <h3><i class="fas fa-tags"></i> Tags</h3>
@@ -230,13 +262,13 @@ fetch('./feeds/news.json')
                     </div>
                 </section>
             `;
-            
+
             document.getElementById('project-content').insertAdjacentHTML('beforeend', tagsHtml);
         }
 
         function renderMaintainers(maintainers) {
             if (maintainers.length === 0) return;
-            
+
             const maintainersHtml = `
                 <section style="margin: 30px 0;">
                     <h3><i class="fas fa-users"></i> Maintainers</h3>
@@ -256,7 +288,7 @@ fetch('./feeds/news.json')
                     </div>
                 </section>
             `;
-            
+
             document.getElementById('project-content').insertAdjacentHTML('beforeend', maintainersHtml);
         }
 
@@ -267,4 +299,5 @@ fetch('./feeds/news.json')
         }
     </script>
 </body>
+
 </html>

@@ -438,6 +438,15 @@
       }
     },
     {
+      "id": "team-bios",
+      "heading": "Meet Our Team",
+      "layout": "bio-section",
+      "variant": "team-profiles",
+      "body": "The accessibility experts and technical leaders behind WCAGscanner are committed to building tools that empower organizations to create inclusive digital experiences for everyone.",
+      "embedUrl": "./embed-bio.html",
+      "backgroundColor": "bg-slate-50"
+    },
+    {
       "id": "faq",
       "heading": "Frequently Asked Questions",
       "layout": "faq-grid",

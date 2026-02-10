@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="bumblebee">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CWCAGScanner - Team Bios</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body class="bg-transparent p-4">
+    <div id="bio-content">
+        <div class="flex justify-center p-10">
+            <span class="loading loading-spinner loading-lg text-primary"></span>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            loadBioContent();
+        });
+
+        async function loadBioContent() {
+            try {
+                const response = await fetch('./feeds/bio.json');
+                const bios = await response.json();
+
+                if (Array.isArray(bios) && bios.length > 0) {
+                    renderBioItems(bios);
+                } else {
+                    showError('No team member bios found.');
+                }
+
+            } catch (error) {
+                console.error('Error loading bio content:', error);
+                showError('Error loading team bios. Please check the bio.json file.');
+            }
+        }
+
+        function renderBioItems(items) {
+            const contentDiv = document.getElementById('bio-content');
+
+            const itemsHtml = items.map(item => `
+                <div class="card bg-base-100 shadow-sm border border-base-200 mb-8 overflow-hidden hover:shadow-md transition-shadow">
+                    <div class="card-body p-6">
+                        <div class="flex flex-col md:flex-row gap-6">
+                            <div class="flex-shrink-0">
+                                <div class="avatar">
+                                    <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-primary/20">
+                                        <img src="${escapeHtml(item.image)}" alt="${escapeHtml(item.name)}" class="w-full h-full object-cover" />
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex-grow">
+                                <h2 class="card-title text-2xl font-bold text-base-content mb-2">
+                                    ${escapeHtml(item.name)}
+                                </h2>
+                                
+                                <div class="badge badge-primary badge-outline mb-4 text-sm font-semibold">
+                                    ${escapeHtml(item.title)}
+                                </div>
+                                
+                                <p class="text-base-content/80 mb-4 leading-relaxed">
+                                    ${escapeHtml(item.bio)}
+                                </p>
+
+                                ${item.expertise && item.expertise.length > 0 ? `
+                                    <div class="mb-4">
+                                        <h4 class="text-sm font-bold text-base-content/70 mb-2 uppercase tracking-wide">
+                                            <i class="fas fa-tools mr-1"></i> Expertise
+                                        </h4>
+                                        <div class="flex flex-wrap gap-1">
+                                            ${item.expertise.map(skill => `
+                                                <span class="badge badge-ghost badge-sm">${escapeHtml(skill)}</span>
+                                            `).join('')}
+                                        </div>
+                                    </div>
+                                ` : ''}
+
+                                ${item.organizations && item.organizations.length > 0 ? `
+                                    <div class="mb-4">
+                                        <h4 class="text-sm font-bold text-base-content/70 mb-2 uppercase tracking-wide">
+                                            <i class="fas fa-building mr-1"></i> Organizations
+                                        </h4>
+                                        <div class="space-y-1">
+                                            ${item.organizations.map(org => `
+                                                <div class="text-sm text-base-content/60">• ${escapeHtml(org)}</div>
+                                            `).join('')}
+                                        </div>
+                                    </div>
+                                ` : ''}
+
+                                ${item.tags && item.tags.length > 0 ? `
+                                    <div class="flex flex-wrap gap-1">
+                                        ${item.tags.map(tag => `
+                                            <span class="badge badge-outline badge-xs text-xs">#${escapeHtml(tag)}</span>
+                                        `).join('')}
+                                    </div>
+                                ` : ''}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+
+            contentDiv.innerHTML = `
+                <div class="max-w-4xl mx-auto">
+                    <div class="text-center mb-8">
+                        <h1 class="text-3xl font-bold text-base-content mb-2">Meet Our Team</h1>
+                        <p class="text-base-content/70">The experts behind WCAGscanner</p>
+                    </div>
+                    ${itemsHtml}
+                </div>
+            `;
+        }
+
+        function showError(message) {
+            const contentDiv = document.getElementById('bio-content');
+            contentDiv.innerHTML = `
+                <div class="alert alert-error max-w-lg mx-auto shadow-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <span>${message}</span>
+                </div>
+            `;
+        }
+
+        function escapeHtml(text) {
+            if (typeof text !== 'string') return text;
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+[
+  {
+    "id": "salim-lakhani",
+    "name": "Salim Lakhani",
+    "title": "CNCF Ambassador & DevPanel Founder",
+    "image": "./images/Salim_Lakhani.png",
+    "bio": "I am an Ambassador with the Cloud Native Computing Foundation (CNCF.io) and a Founding Member of DrupalOps.com (also at Meetup.com/DrupalOps), a community for Drupal DevOps enthusiasts and professionals. As an Ambassador of CNCF, I help manage several DevOps, Kubernetes and Prometheus meetup groups. Professionally, I am the founder of DevPanel, a Control Panel, that helps uses run their own Dev/Test/Live workflow in their own AWS account. DevPanel is set up as a B Corp, with a focus on people and community, not profits.",
+    "expertise": [
+      "Cloud Native Computing",
+      "DevOps",
+      "Kubernetes",
+      "Prometheus",
+      "AWS",
+      "Drupal"
+    ],
+    "organizations": [
+      "Cloud Native Computing Foundation (CNCF)",
+      "DrupalOps.com",
+      "DevPanel"
+    ],
+    "tags": [
+      "CNCF",
+      "DevOps", 
+      "Kubernetes",
+      "AWS",
+      "B-Corp",
+      "community"
+    ]
+  },
+  {
+    "id": "will-kirchheimer",
+    "name": "Will Kirchheimer",
+    "title": "Technical Architect & WCAGscanner Co-founder",
+    "image": "./images/Will_Kirchheimer.jpg",
+    "bio": "I am a Technical Architect with over 20 years of experience in engineering leadership and a long-standing member of the global Drupal community. My professional focus is on the modernization of large-scale federal systems, where I provide architectural oversight to ensure high-performance digital service delivery for millions of users. Throughout my career in the public sector, I have been a dedicated advocate for Section 508 compliance and WCAG standards, integrating accessibility into the core of the development lifecycle. As a co-founder of WCAGscanner, I am committed to building tools that empower organizations to create inclusive digital experiences that are accessible to everyone.",
+    "expertise": [
+      "Technical Architecture", 
+      "Federal Systems",
+      "Accessibility (WCAG/Section 508)",
+      "Drupal",
+      "Engineering Leadership",
+      "Digital Service Delivery"
+    ],
+    "organizations": [
+      "WCAGscanner",
+      "Global Drupal Community"
+    ],
+    "tags": [
+      "accessibility",
+      "WCAG",
+      "Section-508",
+      "federal-systems",
+      "Drupal",
+      "technical-architecture"
+    ]
+  }
+]
