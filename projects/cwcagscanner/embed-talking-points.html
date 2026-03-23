@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="bumblebee">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CWCAGScanner - Talking Points</title>
+</head>
+<body class="bg-transparent p-4">
+    <div id="talking-points-content">
+        <div class="flex justify-center p-10">
+            <span class="loading loading-spinner loading-lg text-primary"></span>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            loadTalkingPoints();
+        });
+
+        async function loadTalkingPoints() {
+            try {
+                const response = await fetch('./feeds/talking-points.json');
+                const slides = await response.json();
+
+                if (Array.isArray(slides) && slides.length > 0) {
+                    renderTalkingPoints(slides);
+                } else {
+                    showError('No talking points found.');
+                }
+
+            } catch (error) {
+                console.error('Error loading talking points:', error);
+                showError('Error loading talking points. Please check the talking-points.json file.');
+            }
+        }
+
+        function renderTalkingPoints(slides) {
+            const contentDiv = document.getElementById('talking-points-content');
+
+            // Group slides by section
+            let sections = {};
+            slides.forEach(slide => {
+                const sec = slide.section || "General";
+                if (!sections[sec]) {
+                    sections[sec] = [];
+                }
+                sections[sec].push(slide);
+            });
+
+            let htmlStr = '<div class="max-w-5xl mx-auto">';
+
+            for (const [section, items] of Object.entries(sections)) {
+                htmlStr += `<h2 class="text-2xl font-bold text-base-content mt-8 mb-6 border-b-2 border-primary/20 pb-2">${escapeHtml(section)}</h2>`;
+                
+                htmlStr += `<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">`;
+                items.forEach(item => {
+                    htmlStr += `
+                        <div class="card bg-base-100 shadow-sm border border-base-200 overflow-hidden hover:shadow-md transition-shadow">
+                            <div class="card-body p-6 flex flex-col">
+                                <div class="badge badge-primary badge-outline text-xs font-bold mb-3">
+                                    ${escapeHtml(item.slideName)}
+                                </div>
+                                
+                                <h3 class="card-title text-xl font-bold text-base-content mb-3 leading-tight">
+                                    ${escapeHtml(item.header || item.slideName)}
+                                </h3>
+                                
+                                <div class="text-base-content/80 text-sm flex-grow">
+                                    ${item.contentHtml}
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                });
+                htmlStr += `</div>`;
+            }
+
+            htmlStr += '</div>';
+            contentDiv.innerHTML = htmlStr;
+        }
+
+        function showError(message) {
+            const contentDiv = document.getElementById('talking-points-content');
+            contentDiv.innerHTML = `
+                <div class="alert alert-error max-w-lg mx-auto shadow-lg">
+                    <span>${message}</span>
+                </div>
+            `;
+        }
+
+        function escapeHtml(text) {
+            if (typeof text !== 'string') return text;
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+    </script>
+</body>
+</html>
