@@ -3,204 +3,315 @@
     "section": "PART 1: The Invisible Crisis (0-15 Minutes)",
     "slideName": "Slide 1: Title Slide",
     "header": "2026 WCAG Accessibility Audits",
-    "contentHtml": "<div class='mb-2 text-base-content/80'>\u2022 <strong>Sub-Header:</strong> Combining Manual Audits, Automated Scans, and Continuous Monitoring.</div><div class='mb-2 text-base-content/80'>\u2022 <strong>Speaker Info:</strong> Will Kirchheimer</div><div class='mb-2 text-base-content/80'>\u2022 <strong>Visual Note:</strong> Simple, professional title card.</div>"
+    "contentHtml": "<div class='mb-2 text-base-content/80'>\u2022 <strong>Sub-Header:</strong> Combining Manual Audits, Automated Scans, and Continuous Monitoring.</div><div class='mb-2 text-base-content/80'>\u2022 <strong>Speaker Info:</strong> Will Kirchheimer</div><div class='mb-2 text-base-content/80'>\u2022 <strong>Visual Note:</strong> Simple, professional title card.</div>",
+    "links": []
   },
   {
     "section": "PART 1: The Invisible Crisis (0-15 Minutes)",
     "slideName": "Slide 2: The Core Problem",
     "header": "The 90% Accessibility Deficit",
-    "contentHtml": "<div class='mb-2 text-base-content/80'>\u2022 <strong>Body Text:</strong></div><div class='mb-2 text-base-content/80'>\u2022 More than 90% of websites today would fail a basic WCAG 2.1 AA audit.</div><div class='mb-2 text-base-content/80'>\u2022 WCAG 2.1 AA is no longer just a \"best practice\"\u2014it is the baseline legal standard for navigating the digital world.</div><div class='mb-2 text-base-content/80'>\u2022 Why? Because the digital landscape is where modern life happens: healthcare, employment, education, and civic duty.</div>"
+    "contentHtml": "<div class='mb-2 text-base-content/80'>\u2022 <strong>Body Text:</strong></div><div class='mb-2 text-base-content/80'>\u2022 More than 90% of websites today would fail a basic WCAG 2.1 AA audit.</div><div class='mb-2 text-base-content/80'>\u2022 WCAG 2.1 AA is no longer just a \"best practice\"\u2014it is the baseline legal standard for navigating the digital world.</div><div class='mb-2 text-base-content/80'>\u2022 Why? Because the digital landscape is where modern life happens: healthcare, employment, education, and civic duty.</div>",
+    "links": []
   },
   {
     "section": "PART 1: The Invisible Crisis (0-15 Minutes)",
     "slideName": "Slide 3: Who Are We Really Serving? (Beyond Screen Readers)",
     "header": "The Spectrum of Disability",
-    "contentHtml": "<div class='mb-2 text-base-content/80'>\u2022 <strong>Body Text:</strong></div><div class='mb-2 text-base-content/80'>\u2022 <strong>Visual:</strong> Blindness, low vision, color blindness.</div><div class='mb-2 text-base-content/80'>\u2022 <strong>Auditory:</strong> Deafness and hearing loss.</div><div class='mb-2 text-base-content/80'>\u2022 <strong>Motor & Physical:</strong> Inability to use a mouse, tremors, paralysis.</div><div class='mb-2 text-base-content/80'>\u2022 <strong>Cognitive & Neurological:</strong> ADHD, Dyslexia, Autism, long-COVID brain fog.</div><div class='mb-2 text-base-content/80'>\u2022 <strong>Temporary/Situational:</strong> A broken arm, bright sunlight, loud rooms without headphones.</div>"
+    "contentHtml": "<div class='mb-2 text-base-content/80'>\u2022 <strong>Body Text:</strong></div><div class='mb-2 text-base-content/80'>\u2022 <strong>Visual:</strong> Blindness, low vision, color blindness.</div><div class='mb-2 text-base-content/80'>\u2022 <strong>Auditory:</strong> Deafness and hearing loss.</div><div class='mb-2 text-base-content/80'>\u2022 <strong>Motor & Physical:</strong> Inability to use a mouse, tremors, paralysis.</div><div class='mb-2 text-base-content/80'>\u2022 <strong>Cognitive & Neurological:</strong> ADHD, Dyslexia, Autism, long-COVID brain fog.</div><div class='mb-2 text-base-content/80'>\u2022 <strong>Temporary/Situational:</strong> A broken arm, bright sunlight, loud rooms without headphones.</div>",
+    "links": []
   },
   {
     "section": "PART 1: The Invisible Crisis (0-15 Minutes)",
     "slideName": "Slide 4: Designing for Cognitive Load",
     "header": "The Fastest-Growing Accessibility Need",
-    "contentHtml": "<div class='mb-2 text-base-content/80'>\u2022 <strong>Body Text:</strong></div><div class='mb-2 text-base-content/80'>\u2022 Accessibility isn't just about color contrast and <code>alt</code> tags.</div><div class='mb-2 text-base-content/80'>\u2022 It's about minimizing cognitive load: reducing animation motion, providing pausing mechanisms, and using clear, brutalist UX writing.</div><div class='mb-2 text-base-content/80'>\u2022 Neurodivergent users rely on predictable layouts and explicit error messages.</div>"
+    "contentHtml": "<div class='mb-2 text-base-content/80'>\u2022 <strong>Body Text:</strong></div><div class='mb-2 text-base-content/80'>\u2022 Accessibility isn't just about color contrast and <code>alt</code> tags.</div><div class='mb-2 text-base-content/80'>\u2022 It's about minimizing cognitive load: reducing animation motion, providing pausing mechanisms, and using clear, brutalist UX writing.</div><div class='mb-2 text-base-content/80'>\u2022 Neurodivergent users rely on predictable layouts and explicit error messages.</div>",
+    "links": []
   },
   {
     "section": "PART 1: The Invisible Crisis (0-15 Minutes)",
     "slideName": "Slide 5: The Hidden ROI of WCAG",
     "header": "Beyond Compliance: The Business Case",
-    "contentHtml": "<div class='mb-2 text-base-content/80'>\u2022 <strong>Body Text:</strong></div><div class='mb-2 text-base-content/80'>\u2022 <strong>SEO Penetration:</strong> Semantic HTML and perfect heading hierarchies map directly to Google's Core Web Vitals.</div><div class='mb-2 text-base-content/80'>\u2022 <strong>AI Training & Machine Readability:</strong> WCAG standards structure data perfectly for LLMs and AI web-scrapers to ingest and cite your content.</div><div class='mb-2 text-base-content/80'>\u2022 <strong>Expanded Market Reach:</strong> Tapping into a $1.2 trillion disabled consumer market.</div>"
+    "contentHtml": "<div class='mb-2 text-base-content/80'>\u2022 <strong>Body Text:</strong></div><div class='mb-2 text-base-content/80'>\u2022 <strong>SEO Penetration:</strong> Semantic HTML and perfect heading hierarchies map directly to Google's Core Web Vitals.</div><div class='mb-2 text-base-content/80'>\u2022 <strong>AI Training & Machine Readability:</strong> WCAG standards structure data perfectly for LLMs and AI web-scrapers to ingest and cite your content.</div><div class='mb-2 text-base-content/80'>\u2022 <strong>Expanded Market Reach:</strong> Tapping into a $1.2 trillion disabled consumer market.</div>",
+    "links": []
   },
   {
     "section": "PART 1: The Invisible Crisis (0-15 Minutes)",
     "slideName": "Slide 6: A \"Hacker\" Perspective on Bad Code",
     "header": "The Carbon Footprint of Inaccessible DOMs",
-    "contentHtml": "<div class='mb-2 text-base-content/80'>\u2022 <strong>Body Text:</strong></div><div class='mb-2 text-base-content/80'>\u2022 Bloated, non-semantic HTML and massive javascript overlay widgets (like accessiBe) aren't just accessibility failures.</div><div class='mb-2 text-base-content/80'>\u2022 They drastically increase the processing power required to render a page.</div><div class='mb-2 text-base-content/80'>\u2022 Clean, semantic, WCAG-compliant HTML uses less energy on servers and client devices. Accessibility is inherently green.</div>"
+    "contentHtml": "<div class='mb-2 text-base-content/80'>\u2022 <strong>Body Text:</strong></div><div class='mb-2 text-base-content/80'>\u2022 Bloated, non-semantic HTML and massive javascript overlay widgets (like accessiBe) aren't just accessibility failures.</div><div class='mb-2 text-base-content/80'>\u2022 They drastically increase the processing power required to render a page.</div><div class='mb-2 text-base-content/80'>\u2022 Clean, semantic, WCAG-compliant HTML uses less energy on servers and client devices. Accessibility is inherently green.</div>",
+    "links": []
   },
   {
     "section": "PART 2: The Rising Legal Tsunami (15-35 Minutes)",
     "slideName": "Slide 7: The Legal Reality - Title II vs. Title III",
     "header": "Two Titles, Two Distinct Threats",
-    "contentHtml": "<div class='mb-2 text-base-content/80'>\u2022 <strong>Body Text:</strong></div><div class='mb-2 text-base-content/80'>\u2022 <strong>Title II (State & Local Government):</strong> The Hard Deadline. The DOJ mandates WCAG 2.1 AA compliance by <strong>April 24, 2026</strong>.</div><div class='mb-2 text-base-content/80'>\u2022 <strong>Title III (Private Sector):</strong> The Litigation Trap. The surge of private lawsuits driven by the \"Nexus Standard.\"</div>"
+    "contentHtml": "<div class='mb-2 text-base-content/80'>\u2022 <strong>Body Text:</strong></div><div class='mb-2 text-base-content/80'>\u2022 <strong>Title II (State & Local Government):</strong> The Hard Deadline. The DOJ mandates WCAG 2.1 AA compliance by <strong>April 24, 2026</strong>.</div><div class='mb-2 text-base-content/80'>\u2022 <strong>Title III (Private Sector):</strong> The Litigation Trap. The surge of private lawsuits driven by the \"Nexus Standard.\"</div>",
+    "links": [
+      {
+        "text": "eComBack",
+        "url": "https://ecomback.com/top-100-plaintiffs-ada-website-lawsuits/"
+      },
+      {
+        "text": "JD Supra",
+        "url": "https://www.jdsupra.com/legalnews/the-web-of-ada-website-lawsuits-6479704/"
+      },
+      {
+        "text": "Accessible.org",
+        "url": "https://accessible.org/ada-website-compliance-lawsuits/"
+      },
+      {
+        "text": "UsableNet",
+        "url": "https://usablenet.com/accessibility-blog/2024-e-commerce-ada-web-accessibility-lawsuit-trends-and-forecasts"
+      }
+    ]
   },
   {
     "section": "PART 2: The Rising Legal Tsunami (15-35 Minutes)",
     "slideName": "Slide 8: Title II Targets (Audience Interaction Option 1)",
     "header": "Who is in the Title II Crosshairs?",
-    "contentHtml": "<div class='mb-2 text-base-content/80'>\u2022 <strong>Body Text (List):</strong></div><div class='mb-2 text-base-content/80'>\u2022 Chicago Public Schools (CPS)</div><div class='mb-2 text-base-content/80'>\u2022 University of Illinois System</div><div class='mb-2 text-base-content/80'>\u2022 Illinois Secretary of State (DMV)</div><div class='mb-2 text-base-content/80'>\u2022 City of Chicago Municipal Portals</div><div class='mb-2 text-base-content/80'>\u2022 Public Libraries & County Courthouses</div><div class='mb-2 text-base-content/80'>\u2022 <strong>Speaker Prompt:</strong> Ask the crowd: *\"Why are these specific groups at such massive legal risk right now?\"*</div>"
+    "contentHtml": "<div class='mb-2 text-base-content/80'>\u2022 <strong>Body Text (List):</strong></div><div class='mb-2 text-base-content/80'>\u2022 Chicago Public Schools (CPS)</div><div class='mb-2 text-base-content/80'>\u2022 University of Illinois System</div><div class='mb-2 text-base-content/80'>\u2022 Illinois Secretary of State (DMV)</div><div class='mb-2 text-base-content/80'>\u2022 City of Chicago Municipal Portals</div><div class='mb-2 text-base-content/80'>\u2022 Public Libraries & County Courthouses</div><div class='mb-2 text-base-content/80'>\u2022 <strong>Speaker Prompt:</strong> Ask the crowd: *\"Why are these specific groups at such massive legal risk right now?\"*</div>",
+    "links": []
   },
   {
     "section": "PART 2: The Rising Legal Tsunami (15-35 Minutes)",
     "slideName": "Slide 9: The Title II \"Why\" (The Answer)",
     "header": "Education & Government at the Brink",
-    "contentHtml": "<div class='mb-2 text-base-content/80'>\u2022 <strong>Body Text:</strong></div><div class='mb-2 text-base-content/80'>\u2022 The April 2026 mandate doesn't just apply to public-facing marketing sites.</div><div class='mb-2 text-base-content/80'>\u2022 It strictly regulates <strong>internal portals</strong>, <strong>online learning platforms (Canvas/Blackboard)</strong>, <strong>digital syllabi/PDFs</strong>, and even <strong>third-party vendor applications</strong>.</div><div class='mb-2 text-base-content/80'>\u2022 If a university buys third-party software, the university holds the liability.</div>"
+    "contentHtml": "<div class='mb-2 text-base-content/80'>\u2022 <strong>Body Text:</strong></div><div class='mb-2 text-base-content/80'>\u2022 The April 2026 mandate doesn't just apply to public-facing marketing sites.</div><div class='mb-2 text-base-content/80'>\u2022 It strictly regulates <strong>internal portals</strong>, <strong>online learning platforms (Canvas/Blackboard)</strong>, <strong>digital syllabi/PDFs</strong>, and even <strong>third-party vendor applications</strong>.</div><div class='mb-2 text-base-content/80'>\u2022 If a university buys third-party software, the university holds the liability.</div>",
+    "links": [
+      {
+        "text": "TransPerfect",
+        "url": "https://www.transperfect.com/blog/doj-ada-title-ii-web-accessibility"
+      }
+    ]
   },
   {
     "section": "PART 2: The Rising Legal Tsunami (15-35 Minutes)",
     "slideName": "Slide 10: Real Consequences: Government Sued",
     "header": "What Does a DOJ Lawsuit Look Like?",
-    "contentHtml": "<div class='mb-2 text-base-content/80'>\u2022 <strong>Body Text:</strong></div><div class='mb-2 text-base-content/80'>\u2022 <strong>State of Alaska:</strong> Sued for failing to provide an accessible digital ballot.</div><div class='mb-2 text-base-content/80'>\u2022 <strong>City of Los Angeles:</strong> Class-action for inaccessible parking ticket payment portals and park reservations systems.</div><div class='mb-2 text-base-content/80'>\u2022 <strong>Service Oklahoma:</strong> Sued because the official DMV mobile app was functionally inaccessible to screen readers (missing ARIA labels).</div>"
+    "contentHtml": "<div class='mb-2 text-base-content/80'>\u2022 <strong>Body Text:</strong></div><div class='mb-2 text-base-content/80'>\u2022 <strong>State of Alaska:</strong> Sued for failing to provide an accessible digital ballot.</div><div class='mb-2 text-base-content/80'>\u2022 <strong>City of Los Angeles:</strong> Class-action for inaccessible parking ticket payment portals and park reservations systems.</div><div class='mb-2 text-base-content/80'>\u2022 <strong>Service Oklahoma:</strong> Sued because the official DMV mobile app was functionally inaccessible to screen readers (missing ARIA labels).</div>",
+    "links": []
   },
   {
     "section": "PART 2: The Rising Legal Tsunami (15-35 Minutes)",
     "slideName": "Slide 11: The Secret DOJ Maneuver",
     "header": "The Title II \"Interim Final Rule\" (IFR) Curveball",
-    "contentHtml": "<div class='mb-2 text-base-content/80'>\u2022 <strong>Body Text:</strong></div><div class='mb-2 text-base-content/80'>\u2022 While the April 2026 deadline is firm, the DOJ quietly sent an Interim Final Rule to OIRA in early 2026.</div><div class='mb-2 text-base-content/80'>\u2022 This allows the DOJ to alter or soften provisions *without* public comment right before the deadline hits, keeping compliance teams guessing.</div>"
+    "contentHtml": "<div class='mb-2 text-base-content/80'>\u2022 <strong>Body Text:</strong></div><div class='mb-2 text-base-content/80'>\u2022 While the April 2026 deadline is firm, the DOJ quietly sent an Interim Final Rule to OIRA in early 2026.</div><div class='mb-2 text-base-content/80'>\u2022 This allows the DOJ to alter or soften provisions *without* public comment right before the deadline hits, keeping compliance teams guessing.</div>",
+    "links": []
   },
   {
     "section": "PART 2: The Rising Legal Tsunami (15-35 Minutes)",
     "slideName": "Slide 12: Title III Targets (Audience Interaction Option 2)",
     "header": "Who is in the Title III Crosshairs?",
-    "contentHtml": "<div class='mb-2 text-base-content/80'>\u2022 <strong>Body Text (List):</strong></div><div class='mb-2 text-base-content/80'>\u2022 Ticketmaster / Live Nation</div><div class='mb-2 text-base-content/80'>\u2022 Marriott International</div><div class='mb-2 text-base-content/80'>\u2022 Hilton / Hilton Honors</div><div class='mb-2 text-base-content/80'>\u2022 Expedia / Booking.com</div><div class='mb-2 text-base-content/80'>\u2022 Home Depot / E-Commerce</div><div class='mb-2 text-base-content/80'>\u2022 <strong>Speaker Prompt:</strong> Ask the crowd: *\"Why are these massive private companies so legally vulnerable when they don't have a 2026 deadline?\"*</div>"
+    "contentHtml": "<div class='mb-2 text-base-content/80'>\u2022 <strong>Body Text (List):</strong></div><div class='mb-2 text-base-content/80'>\u2022 Ticketmaster / Live Nation</div><div class='mb-2 text-base-content/80'>\u2022 Marriott International</div><div class='mb-2 text-base-content/80'>\u2022 Hilton / Hilton Honors</div><div class='mb-2 text-base-content/80'>\u2022 Expedia / Booking.com</div><div class='mb-2 text-base-content/80'>\u2022 Home Depot / E-Commerce</div><div class='mb-2 text-base-content/80'>\u2022 <strong>Speaker Prompt:</strong> Ask the crowd: *\"Why are these massive private companies so legally vulnerable when they don't have a 2026 deadline?\"*</div>",
+    "links": []
   },
   {
     "section": "PART 2: The Rising Legal Tsunami (15-35 Minutes)",
     "slideName": "Slide 13: The Title III \"Why\" (The Answer)",
     "header": "The Nexus Standard & The AI Pro Se Surge",
-    "contentHtml": "<div class='mb-2 text-base-content/80'>\u2022 <strong>Body Text:</strong></div><div class='mb-2 text-base-content/80'>\u2022 <strong>The Nexus Standard:</strong> Courts rule that if a website is a gateway to a physical location (a Hilton hotel, an arena), it is a Place of Public Accommodation.</div><div class='mb-2 text-base-content/80'>\u2022 <strong>The Pro Se Surge:</strong> A 40% spike in unrepresented individuals using AI tools to draft airtight federal ADA complaints.</div><div class='mb-2 text-base-content/80'>\u2022 <strong>Complex Booking Engines:</strong> These sites fail because interactive seating charts, dynamic inventory, and pop-up date-pickers trap screen readers.</div>"
+    "contentHtml": "<div class='mb-2 text-base-content/80'>\u2022 <strong>Body Text:</strong></div><div class='mb-2 text-base-content/80'>\u2022 <strong>The Nexus Standard:</strong> Courts rule that if a website is a gateway to a physical location (a Hilton hotel, an arena), it is a Place of Public Accommodation.</div><div class='mb-2 text-base-content/80'>\u2022 <strong>The Pro Se Surge:</strong> A 40% spike in unrepresented individuals using AI tools to draft airtight federal ADA complaints.</div><div class='mb-2 text-base-content/80'>\u2022 <strong>Complex Booking Engines:</strong> These sites fail because interactive seating charts, dynamic inventory, and pop-up date-pickers trap screen readers.</div>",
+    "links": [
+      {
+        "text": "DePaul Law Review",
+        "url": "https://law.depaul.edu"
+      }
+    ]
   },
   {
     "section": "PART 2: The Rising Legal Tsunami (15-35 Minutes)",
     "slideName": "Slide 14: Sector Deep-Dive: The HHS Mandate",
     "header": "Healthcare is Not Exempt",
-    "contentHtml": "<div class='mb-2 text-base-content/80'>\u2022 <strong>Body Text:</strong></div><div class='mb-2 text-base-content/80'>\u2022 The DOJ isn\u2019t the only enforcer. The Department of Health and Human Services (HHS) issued a massive, separate deadline.</div><div class='mb-2 text-base-content/80'>\u2022 Healthcare websites, patient charting portals, and medical mobile apps must meet WCAG 2.1 Level AA standards by <strong>May 2026</strong>.</div>"
+    "contentHtml": "<div class='mb-2 text-base-content/80'>\u2022 <strong>Body Text:</strong></div><div class='mb-2 text-base-content/80'>\u2022 The DOJ isn\u2019t the only enforcer. The Department of Health and Human Services (HHS) issued a massive, separate deadline.</div><div class='mb-2 text-base-content/80'>\u2022 Healthcare websites, patient charting portals, and medical mobile apps must meet WCAG 2.1 Level AA standards by <strong>May 2026</strong>.</div>",
+    "links": []
   },
   {
     "section": "PART 2: The Rising Legal Tsunami (15-35 Minutes)",
     "slideName": "Slide 15: The Futility of Title III Legal Defenses",
     "header": "What Happens When You Get Sued?",
-    "contentHtml": "<div class='mb-2 text-base-content/80'>\u2022 <strong>Body Text:</strong></div><div class='mb-2 text-base-content/80'>\u2022 Defense 1: <strong>\"Mootness\"</strong> (We hired a dev firm to fix it!) - Fails. Requires proving the site is *already* 100% fixed.</div><div class='mb-2 text-base-content/80'>\u2022 Defense 2: <strong>\"Primary Jurisdiction\"</strong> (We are waiting on DOJ rules!) - Routinely rejected by courts.</div><div class='mb-2 text-base-content/80'>\u2022 Defense 3: <strong>\"Ignorance\" & Overlays</strong> - Installing an AI widget (like accessiBe) does not hold up in court if the underlying code remains broken.</div>"
+    "contentHtml": "<div class='mb-2 text-base-content/80'>\u2022 <strong>Body Text:</strong></div><div class='mb-2 text-base-content/80'>\u2022 Defense 1: <strong>\"Mootness\"</strong> (We hired a dev firm to fix it!) - Fails. Requires proving the site is *already* 100% fixed.</div><div class='mb-2 text-base-content/80'>\u2022 Defense 2: <strong>\"Primary Jurisdiction\"</strong> (We are waiting on DOJ rules!) - Routinely rejected by courts.</div><div class='mb-2 text-base-content/80'>\u2022 Defense 3: <strong>\"Ignorance\" & Overlays</strong> - Installing an AI widget (like accessiBe) does not hold up in court if the underlying code remains broken.</div>",
+    "links": [
+      {
+        "text": "Workforce Bulletin Analysis",
+        "url": "https://www.workforcebulletin.com"
+      },
+      {
+        "text": "Mondaq Legal Insights",
+        "url": "https://www.mondaq.com"
+      }
+    ]
   },
   {
     "section": "PART 2: The Rising Legal Tsunami (15-35 Minutes)",
     "slideName": "Slide 16: The Harsh Reality of Litigation",
     "header": "Why 85% Settle Early",
-    "contentHtml": "<div class='mb-2 text-base-content/80'>\u2022 <strong>Body Text:</strong></div><div class='mb-2 text-base-content/80'>\u2022 Because common legal defenses fail in court, businesses have almost no viable defense when non-compliant code is structurally verified.</div><div class='mb-2 text-base-content/80'>\u2022 Litigating a verified WCAG failure costs exponentially more in plaintiff attorney fees than simply paying the settlement and fixing the code.</div>"
+    "contentHtml": "<div class='mb-2 text-base-content/80'>\u2022 <strong>Body Text:</strong></div><div class='mb-2 text-base-content/80'>\u2022 Because common legal defenses fail in court, businesses have almost no viable defense when non-compliant code is structurally verified.</div><div class='mb-2 text-base-content/80'>\u2022 Litigating a verified WCAG failure costs exponentially more in plaintiff attorney fees than simply paying the settlement and fixing the code.</div>",
+    "links": [
+      {
+        "text": "American Bar Association",
+        "url": "https://www.americanbar.org"
+      },
+      {
+        "text": "TestParty/AudioEye industry reports",
+        "url": "https://www.testparty.ai"
+      },
+      {
+        "text": "Accessible.org",
+        "url": "https://accessible.org/ada-website-compliance-lawsuits/"
+      },
+      {
+        "text": "Accessible Minds",
+        "url": "https://accessiblemindstech.com/2025/01/22/2025-a-pivotal-year-for-digital-accessibility-and-ada-compliance/"
+      }
+    ]
   },
   {
     "section": "PART 3: The Technical Blindspots (35-50 Minutes)",
     "slideName": "Slide 17: Vulnerability: The Complex Intake Form",
     "header": "The High-Risk Data Trap",
-    "contentHtml": "<div class='mb-2 text-base-content/80'>\u2022 <strong>Body Text:</strong></div><div class='mb-2 text-base-content/80'>\u2022 Complex web forms are the most common source of Title III liability.</div><div class='mb-2 text-base-content/80'>\u2022 Missing <code><label></code> tags, improper error state announcements, and keyboard trapping.</div><div class='mb-2 text-base-content/80'>\u2022 <strong>Primary Targets:</strong> FAFSA applications, multi-step mortgage funnels, tax filing apps, and immigration forms.</div>"
+    "contentHtml": "<div class='mb-2 text-base-content/80'>\u2022 <strong>Body Text:</strong></div><div class='mb-2 text-base-content/80'>\u2022 Complex web forms are the most common source of Title III liability.</div><div class='mb-2 text-base-content/80'>\u2022 Missing <code><label></code> tags, improper error state announcements, and keyboard trapping.</div><div class='mb-2 text-base-content/80'>\u2022 <strong>Primary Targets:</strong> FAFSA applications, multi-step mortgage funnels, tax filing apps, and immigration forms.</div>",
+    "links": []
   },
   {
     "section": "PART 3: The Technical Blindspots (35-50 Minutes)",
     "slideName": "Slide 18: Are You Scanning Mobile DOMs?",
     "header": "The Responsive Reality",
-    "contentHtml": "<div class='mb-2 text-base-content/80'>\u2022 <strong>Body Text:</strong></div><div class='mb-2 text-base-content/80'>\u2022 An accessible desktop site does not equal an accessible mobile site.</div><div class='mb-2 text-base-content/80'>\u2022 DOMs change drastically at mobile breakpoints (accessible megamenus collapse into inaccessible mobile hamburger menus).</div><div class='mb-2 text-base-content/80'>\u2022 The DOJ explicitly lists \"mobile applications\" alongside websites. Your scanner *must* test alternate viewports.</div>"
+    "contentHtml": "<div class='mb-2 text-base-content/80'>\u2022 <strong>Body Text:</strong></div><div class='mb-2 text-base-content/80'>\u2022 An accessible desktop site does not equal an accessible mobile site.</div><div class='mb-2 text-base-content/80'>\u2022 DOMs change drastically at mobile breakpoints (accessible megamenus collapse into inaccessible mobile hamburger menus).</div><div class='mb-2 text-base-content/80'>\u2022 The DOJ explicitly lists \"mobile applications\" alongside websites. Your scanner *must* test alternate viewports.</div>",
+    "links": []
   },
   {
     "section": "PART 3: The Technical Blindspots (35-50 Minutes)",
     "slideName": "Slide 19: The \"Document\" Dilemma",
     "header": "Scaling Accessible Content",
-    "contentHtml": "<div class='mb-2 text-base-content/80'>\u2022 <strong>Body Text:</strong></div><div class='mb-2 text-base-content/80'>\u2022 Web pages are getting better, but legal exposure remains massive for attached documents.</div><div class='mb-2 text-base-content/80'>\u2022 Courts increasingly treat PDFs, spreadsheets, and slide decks hosted online as heavily scrutinized public accommodations.</div><div class='mb-2 text-base-content/80'>\u2022 Remediating thousands of legacy PDFs is technically taxing and legally dangerous.</div>"
+    "contentHtml": "<div class='mb-2 text-base-content/80'>\u2022 <strong>Body Text:</strong></div><div class='mb-2 text-base-content/80'>\u2022 Web pages are getting better, but legal exposure remains massive for attached documents.</div><div class='mb-2 text-base-content/80'>\u2022 Courts increasingly treat PDFs, spreadsheets, and slide decks hosted online as heavily scrutinized public accommodations.</div><div class='mb-2 text-base-content/80'>\u2022 Remediating thousands of legacy PDFs is technically taxing and legally dangerous.</div>",
+    "links": []
   },
   {
     "section": "PART 3: The Technical Blindspots (35-50 Minutes)",
     "slideName": "Slide 20: The Authenticated Blindspot",
     "header": "Where Legacy Scanners Fail",
-    "contentHtml": "<div class='mb-2 text-base-content/80'>\u2022 <strong>Body Text:</strong></div><div class='mb-2 text-base-content/80'>\u2022 The vast majority of WCAG scanners exclusively crawl unauthenticated public marketing pages.</div><div class='mb-2 text-base-content/80'>\u2022 The true legal exposure lies <strong>behind the login screen</strong> (patient charting, HR payroll, student registration).</div><div class='mb-2 text-base-content/80'>\u2022 The DOJ does not stop at the login screen.</div>"
+    "contentHtml": "<div class='mb-2 text-base-content/80'>\u2022 <strong>Body Text:</strong></div><div class='mb-2 text-base-content/80'>\u2022 The vast majority of WCAG scanners exclusively crawl unauthenticated public marketing pages.</div><div class='mb-2 text-base-content/80'>\u2022 The true legal exposure lies <strong>behind the login screen</strong> (patient charting, HR payroll, student registration).</div><div class='mb-2 text-base-content/80'>\u2022 The DOJ does not stop at the login screen.</div>",
+    "links": []
   },
   {
     "section": "PART 3: The Technical Blindspots (35-50 Minutes)",
     "slideName": "Slide 21: Authenticated Scanning in Practice",
     "header": "Traversing Secure Portals",
-    "contentHtml": "<div class='mb-2 text-base-content/80'>\u2022 <strong>Body Text:</strong></div><div class='mb-2 text-base-content/80'>\u2022 Traditional web crawlers get blocked by Single Sign-On (SSO), JWT, and multi-factor authentication.</div><div class='mb-2 text-base-content/80'>\u2022 Modern tools (like wcagscanner.com) are built to natively authenticate, navigate user flows, and monitor deep, secure sections of web platforms just like a human user would.</div>"
+    "contentHtml": "<div class='mb-2 text-base-content/80'>\u2022 <strong>Body Text:</strong></div><div class='mb-2 text-base-content/80'>\u2022 Traditional web crawlers get blocked by Single Sign-On (SSO), JWT, and multi-factor authentication.</div><div class='mb-2 text-base-content/80'>\u2022 Modern tools (like wcagscanner.com) are built to natively authenticate, navigate user flows, and monitor deep, secure sections of web platforms just like a human user would.</div>",
+    "links": []
   },
   {
     "section": "PART 4: The Evaluation Evolution (50-65 Minutes)",
     "slideName": "Slide 22: The Three-Pronged Strategy",
     "header": "How Do We Actually Fix This?",
-    "contentHtml": "<div class='mb-2 text-base-content/80'>\u2022 <strong>Body Text:</strong></div><div class='mb-2 text-base-content/80'>\u2022 Compliance cannot rely on a single solution. It requires a synchronized triad:</div><div class='mb-2 text-base-content/80'>\u2022 1. The Manual Audit</div><div class='mb-2 text-base-content/80'>\u2022 2. The Automated Scan</div><div class='mb-2 text-base-content/80'>\u2022 3. Continuous Monitoring</div>"
+    "contentHtml": "<div class='mb-2 text-base-content/80'>\u2022 <strong>Body Text:</strong></div><div class='mb-2 text-base-content/80'>\u2022 Compliance cannot rely on a single solution. It requires a synchronized triad:</div><div class='mb-2 text-base-content/80'>\u2022 1. The Manual Audit</div><div class='mb-2 text-base-content/80'>\u2022 2. The Automated Scan</div><div class='mb-2 text-base-content/80'>\u2022 3. Continuous Monitoring</div>",
+    "links": []
   },
   {
     "section": "PART 4: The Evaluation Evolution (50-65 Minutes)",
     "slideName": "Slide 23: The Limitations of \"Super Scanners\"",
     "header": "AI is Not a Silver Bullet (Yet)",
-    "contentHtml": "<div class='mb-2 text-base-content/80'>\u2022 <strong>Body Text:</strong></div><div class='mb-2 text-base-content/80'>\u2022 Fully trusting an AI to scan and auto-certify a site for compliance is highly risky.</div><div class='mb-2 text-base-content/80'>\u2022 Why? Because AI struggles with context and dynamic interactions (The \"Non-Deterministic Design\" problem).</div><div class='mb-2 text-base-content/80'>\u2022 AI chat interfaces and highly dynamic state-changes easily confuse automated tools.</div>"
+    "contentHtml": "<div class='mb-2 text-base-content/80'>\u2022 <strong>Body Text:</strong></div><div class='mb-2 text-base-content/80'>\u2022 Fully trusting an AI to scan and auto-certify a site for compliance is highly risky.</div><div class='mb-2 text-base-content/80'>\u2022 Why? Because AI struggles with context and dynamic interactions (The \"Non-Deterministic Design\" problem).</div><div class='mb-2 text-base-content/80'>\u2022 AI chat interfaces and highly dynamic state-changes easily confuse automated tools.</div>",
+    "links": []
   },
   {
     "section": "PART 4: The Evaluation Evolution (50-65 Minutes)",
     "slideName": "Slide 24: The AI Hallucination Trap",
     "header": "The Danger of Auto-Generated Alt Text",
-    "contentHtml": "<div class='mb-2 text-base-content/80'>\u2022 <strong>Body Text:</strong></div><div class='mb-2 text-base-content/80'>\u2022 Companies are rushing to use AI to auto-generate image <code>alt text</code> to pass automated scanners.</div><div class='mb-2 text-base-content/80'>\u2022 <strong>The Trap:</strong> If an AI incorrectly tags a \"Submit Payment\" button as a \"Decorative Image,\" the scanner passes it. But a blind user is completely blocked from checking out.</div><div class='mb-2 text-base-content/80'>\u2022 Automated scanners will mistakenly flag hallucinated descriptions as \"100% compliant.\"</div>"
+    "contentHtml": "<div class='mb-2 text-base-content/80'>\u2022 <strong>Body Text:</strong></div><div class='mb-2 text-base-content/80'>\u2022 Companies are rushing to use AI to auto-generate image <code>alt text</code> to pass automated scanners.</div><div class='mb-2 text-base-content/80'>\u2022 <strong>The Trap:</strong> If an AI incorrectly tags a \"Submit Payment\" button as a \"Decorative Image,\" the scanner passes it. But a blind user is completely blocked from checking out.</div><div class='mb-2 text-base-content/80'>\u2022 Automated scanners will mistakenly flag hallucinated descriptions as \"100% compliant.\"</div>",
+    "links": []
   },
   {
     "section": "PART 4: The Evaluation Evolution (50-65 Minutes)",
     "slideName": "Slide 25: Hybrid Automation: The Human in the Loop",
     "header": "Trust, but Verify",
-    "contentHtml": "<div class='mb-2 text-base-content/80'>\u2022 <strong>Body Text:</strong></div><div class='mb-2 text-base-content/80'>\u2022 Humans must remain in the loop for subjective evaluations: logical focus order, cognitive clarity, and contextual descriptions.</div><div class='mb-2 text-base-content/80'>\u2022 Machines are for scale, humans are for nuance. Empathy cannot be automated.</div>"
+    "contentHtml": "<div class='mb-2 text-base-content/80'>\u2022 <strong>Body Text:</strong></div><div class='mb-2 text-base-content/80'>\u2022 Humans must remain in the loop for subjective evaluations: logical focus order, cognitive clarity, and contextual descriptions.</div><div class='mb-2 text-base-content/80'>\u2022 Machines are for scale, humans are for nuance. Empathy cannot be automated.</div>",
+    "links": []
   },
   {
     "section": "PART 4: The Evaluation Evolution (50-65 Minutes)",
     "slideName": "Slide 26: Where AI *Actually* Shines",
     "header": "Targeted AI Remediation",
-    "contentHtml": "<div class='mb-2 text-base-content/80'>\u2022 <strong>Body Text:</strong></div><div class='mb-2 text-base-content/80'>\u2022 Do not use AI to conduct the primary scan.</div><div class='mb-2 text-base-content/80'>\u2022 <strong>Use AI for the patch.</strong></div><div class='mb-2 text-base-content/80'>\u2022 Once a human/automated scan identifies a failure, GenAI excels at writing the specific HTML/ARIA code patches to safely remediate templates at the framework level (React/Vue/Server-side).</div>"
+    "contentHtml": "<div class='mb-2 text-base-content/80'>\u2022 <strong>Body Text:</strong></div><div class='mb-2 text-base-content/80'>\u2022 Do not use AI to conduct the primary scan.</div><div class='mb-2 text-base-content/80'>\u2022 <strong>Use AI for the patch.</strong></div><div class='mb-2 text-base-content/80'>\u2022 Once a human/automated scan identifies a failure, GenAI excels at writing the specific HTML/ARIA code patches to safely remediate templates at the framework level (React/Vue/Server-side).</div>",
+    "links": []
   },
   {
     "section": "PART 5: Scaling The Workflow (65-75 Minutes)",
     "slideName": "Slide 27: Shifting Left & Scaling Up",
     "header": "The Logistical Nightmare",
-    "contentHtml": "<div class='mb-2 text-base-content/80'>\u2022 <strong>Body Text:</strong></div><div class='mb-2 text-base-content/80'>\u2022 One of the hardest parts of digital accessibility is taking a massive 500-page audit report and giving it to an engineering department.</div><div class='mb-2 text-base-content/80'>\u2022 Accessibility shouldn't be a post-launch bottleneck; it needs to be integrated directly into the engineering workflow (\"Shifting Left\").</div>"
+    "contentHtml": "<div class='mb-2 text-base-content/80'>\u2022 <strong>Body Text:</strong></div><div class='mb-2 text-base-content/80'>\u2022 One of the hardest parts of digital accessibility is taking a massive 500-page audit report and giving it to an engineering department.</div><div class='mb-2 text-base-content/80'>\u2022 Accessibility shouldn't be a post-launch bottleneck; it needs to be integrated directly into the engineering workflow (\"Shifting Left\").</div>",
+    "links": [
+      {
+        "text": "BOIA",
+        "url": "https://www.boia.org/blog/ada-compliance-who-enforces-accessibility-laws"
+      }
+    ]
   },
   {
     "section": "PART 5: Scaling The Workflow (65-75 Minutes)",
     "slideName": "Slide 28: Intelligent Remediation Pipelines",
     "header": "Breaking Down the Feedback Loop",
-    "contentHtml": "<div class='mb-2 text-base-content/80'>\u2022 <strong>Body Text:</strong></div><div class='mb-2 text-base-content/80'>\u2022 Stop sending massive PDFs of 1,000 accessibility errors to a \"general issue\" backlog.</div><div class='mb-2 text-base-content/80'>\u2022 Tools like <code>wcagscanner.com</code> allow organizations to configure specific Scan Collections.</div><div class='mb-2 text-base-content/80'>\u2022 Select isolated domains, specific components, or specific URLs, eliminating noise and the \"not my job\" syndrome.</div>"
+    "contentHtml": "<div class='mb-2 text-base-content/80'>\u2022 <strong>Body Text:</strong></div><div class='mb-2 text-base-content/80'>\u2022 Stop sending massive PDFs of 1,000 accessibility errors to a \"general issue\" backlog.</div><div class='mb-2 text-base-content/80'>\u2022 Tools like <code>wcagscanner.com</code> allow organizations to configure specific Scan Collections.</div><div class='mb-2 text-base-content/80'>\u2022 Select isolated domains, specific components, or specific URLs, eliminating noise and the \"not my job\" syndrome.</div>",
+    "links": []
   },
   {
     "section": "PART 5: Scaling The Workflow (65-75 Minutes)",
     "slideName": "Slide 29: CI/CD & Cron Triggers",
     "header": "Moving to Continuous Monitoring",
-    "contentHtml": "<div class='mb-2 text-base-content/80'>\u2022 <strong>Body Text:</strong></div><div class='mb-2 text-base-content/80'>\u2022 \"Point-in-time\" audits fail because websites change daily (This creates \"Repeat Defendants\" in lawsuits).</div><div class='mb-2 text-base-content/80'>\u2022 Integrate scanners via cron jobs and CI/CD pipelines to automatically deliver new scan results into specific Slack channels or Jira boards the moment code is deployed.</div><div class='mb-2 text-base-content/80'>\u2022 Targeted delivery directly to the engineering team responsible.</div>"
+    "contentHtml": "<div class='mb-2 text-base-content/80'>\u2022 <strong>Body Text:</strong></div><div class='mb-2 text-base-content/80'>\u2022 \"Point-in-time\" audits fail because websites change daily (This creates \"Repeat Defendants\" in lawsuits).</div><div class='mb-2 text-base-content/80'>\u2022 Integrate scanners via cron jobs and CI/CD pipelines to automatically deliver new scan results into specific Slack channels or Jira boards the moment code is deployed.</div><div class='mb-2 text-base-content/80'>\u2022 Targeted delivery directly to the engineering team responsible.</div>",
+    "links": [
+      {
+        "text": "UsableNet",
+        "url": "https://usablenet.com/accessibility-blog/usablenet-midyear-report-uncovers-a-rise-in-ada-web-accessibility-lawsuits"
+      }
+    ]
   },
   {
     "section": "PART 5: Scaling The Workflow (65-75 Minutes)",
     "slideName": "Slide 30: Design Systems as a Defense",
     "header": "Sustained Accessibility",
-    "contentHtml": "<div class='mb-2 text-base-content/80'>\u2022 <strong>Body Text:</strong></div><div class='mb-2 text-base-content/80'>\u2022 Building accessibility primitives (compliant color tokens, pre-built ARIA patterns, keyboard-friendly focus states) directly into your company's core component library.</div><div class='mb-2 text-base-content/80'>\u2022 When the design system is accessible, developers get WCAG compliance \"for free\" just by importing the component.</div>"
+    "contentHtml": "<div class='mb-2 text-base-content/80'>\u2022 <strong>Body Text:</strong></div><div class='mb-2 text-base-content/80'>\u2022 Building accessibility primitives (compliant color tokens, pre-built ARIA patterns, keyboard-friendly focus states) directly into your company's core component library.</div><div class='mb-2 text-base-content/80'>\u2022 When the design system is accessible, developers get WCAG compliance \"for free\" just by importing the component.</div>",
+    "links": []
   },
   {
     "section": "PART 6: Looking Forward (75-80 Minutes)",
     "slideName": "Slide 31: Navigating the Global EAA",
     "header": "The European Accessibility Act (2025)",
-    "contentHtml": "<div class='mb-2 text-base-content/80'>\u2022 <strong>Body Text:</strong></div><div class='mb-2 text-base-content/80'>\u2022 With the EAA becoming fully enforceable in June 2025, the standard for commerce is going global.</div><div class='mb-2 text-base-content/80'>\u2022 U.S. businesses operating heavily in Europe must align their ADA Title III and DOJ Title II strategies with the rigid EAA mandates.</div>"
+    "contentHtml": "<div class='mb-2 text-base-content/80'>\u2022 <strong>Body Text:</strong></div><div class='mb-2 text-base-content/80'>\u2022 With the EAA becoming fully enforceable in June 2025, the standard for commerce is going global.</div><div class='mb-2 text-base-content/80'>\u2022 U.S. businesses operating heavily in Europe must align their ADA Title III and DOJ Title II strategies with the rigid EAA mandates.</div>",
+    "links": []
   },
   {
     "section": "PART 6: Looking Forward (75-80 Minutes)",
     "slideName": "Slide 32: The New Frontier",
     "header": "WCAG 3.0 & Spatial Computing",
-    "contentHtml": "<div class='mb-2 text-base-content/80'>\u2022 <strong>Body Text:</strong></div><div class='mb-2 text-base-content/80'>\u2022 WCAG 3.0 is coming, moving from binary pass/fail mechanics to a holistic scoring system encompassing more complex disabilities.</div><div class='mb-2 text-base-content/80'>\u2022 <strong>The Metaverse Challenge:</strong> With Apple Vision Pro and Meta Quest moving into enterprise, how do we apply 2D UI concepts like \"keyboard focus\" to 3D VR/AR spatial arrays?</div>"
+    "contentHtml": "<div class='mb-2 text-base-content/80'>\u2022 <strong>Body Text:</strong></div><div class='mb-2 text-base-content/80'>\u2022 WCAG 3.0 is coming, moving from binary pass/fail mechanics to a holistic scoring system encompassing more complex disabilities.</div><div class='mb-2 text-base-content/80'>\u2022 <strong>The Metaverse Challenge:</strong> With Apple Vision Pro and Meta Quest moving into enterprise, how do we apply 2D UI concepts like \"keyboard focus\" to 3D VR/AR spatial arrays?</div>",
+    "links": [
+      {
+        "text": "KHA Creation",
+        "url": "https://khacreationusa.com/ada-website-compliance-state-of-accessibility/"
+      }
+    ]
   },
   {
     "section": "PART 6: Looking Forward (75-80 Minutes)",
     "slideName": "Slide 33: Conclusion",
     "header": "A Strategic Advantage",
-    "contentHtml": "<div class='mb-2 text-base-content/80'>\u2022 <strong>Body Text:</strong></div><div class='mb-2 text-base-content/80'>\u2022 Accessibility compliance is a civil right, a massive legal liability, and an untapped business opportunity.</div><div class='mb-2 text-base-content/80'>\u2022 A cohesive strategy uses manual evaluation for empathy, automated scanning for scale, and continuous CI/CD integration for long-term protection.</div>"
+    "contentHtml": "<div class='mb-2 text-base-content/80'>\u2022 <strong>Body Text:</strong></div><div class='mb-2 text-base-content/80'>\u2022 Accessibility compliance is a civil right, a massive legal liability, and an untapped business opportunity.</div><div class='mb-2 text-base-content/80'>\u2022 A cohesive strategy uses manual evaluation for empathy, automated scanning for scale, and continuous CI/CD integration for long-term protection.</div>",
+    "links": [
+      {
+        "text": "The Samuel Law Firm",
+        "url": "https://thesamuellawfirm.com/understanding-the-consequences-of-ada-non-compliance/"
+      },
+      {
+        "text": "Oyova",
+        "url": "https://www.oyova.com/blog/are-we-liable-for-a-noncompliant-ada-website/"
+      }
+    ]
   },
   {
     "section": "PART 6: Looking Forward (75-80 Minutes)",
     "slideName": "Slide 34: Q&A",
     "header": "Questions?",
-    "contentHtml": "<div class='mb-2 text-base-content/80'>\u2022 <strong>Body Text:</strong></div><div class='mb-2 text-base-content/80'>\u2022 Will Kirchheimer</div><div class='mb-2 text-base-content/80'>\u2022 [Contact Info / Social Links]</div><div class='mb-2 text-base-content/80'>\u2022 wcagscanner.com</div>"
+    "contentHtml": "<div class='mb-2 text-base-content/80'>\u2022 <strong>Body Text:</strong></div><div class='mb-2 text-base-content/80'>\u2022 Will Kirchheimer</div><div class='mb-2 text-base-content/80'>\u2022 [Contact Info / Social Links]</div><div class='mb-2 text-base-content/80'>\u2022 wcagscanner.com</div>",
+    "links": []
   }
 ]

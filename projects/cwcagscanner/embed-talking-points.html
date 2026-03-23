@@ -54,6 +54,15 @@
                 
                 htmlStr += `<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">`;
                 items.forEach(item => {
+                    let linksHtml = '';
+                    if (item.links && item.links.length > 0) {
+                        linksHtml = '<div class="mt-4 pt-4 border-t border-base-200"><h4 class="text-xs font-bold text-base-content/60 uppercase tracking-wide mb-2">Sources & References</h4><div class="flex flex-wrap gap-2">';
+                        item.links.forEach(link => {
+                            linksHtml += `<a href="${escapeHtml(link.url)}" target="_blank" class="badge badge-secondary badge-outline hover:bg-secondary hover:text-secondary-content transition-colors text-xs py-2 px-3 h-auto">🔗 ${escapeHtml(link.text)}</a>`;
+                        });
+                        linksHtml += '</div></div>';
+                    }
+
                     htmlStr += `
                         <div class="card bg-base-100 shadow-sm border border-base-200 overflow-hidden hover:shadow-md transition-shadow">
                             <div class="card-body p-6 flex flex-col">
@@ -68,6 +77,7 @@
                                 <div class="text-base-content/80 text-sm flex-grow">
                                     ${item.contentHtml}
                                 </div>
+                                ${linksHtml}
                             </div>
                         </div>
                     `;
